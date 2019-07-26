@@ -1,0 +1,28 @@
+body {
+    color: #272727;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+svg,
+img {
+    vertical-align: middle;
+}

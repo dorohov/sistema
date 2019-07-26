@@ -1,0 +1,17 @@
+{
+    "sitename": "Система Комплекс",
+    "lang": "ru",
+    "pages": {
+        "index": "index.html",
+        "directions": "directions.html",
+        "directions.item": "directions.item.html",
+        "table": "table.html",
+        "team": "team.html",
+        "prices": "prices.html",
+        "contacts": "contacts.html",
+        "about": "about.html",
+        "blog": "blog.html",
+        "article": "article.html",
+        "info": "info.html"
+    }
+}
