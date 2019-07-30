@@ -11,22 +11,201 @@
 </head>
 
 <body>
-    <header class="navbar">
-
+    <header class="navbar is--transparent">
+        <div class="navbar__inner container">
+            <div class="navbar__logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Система Комплекс">
+                </a>
+            </div>
+            <div class="navbar__menu">
+                <button>
+                    <svg class="svg-menu-dims svg is--menu">
+                        <use xlink:href="img/svg/sprites.svg#menu"></use>
+                    </svg>
+                    Меню
+                </button>
+            </div>
+            <div class="navbar__info">
+                <div class="navbar__info__block">
+                    <span>ПН — вс 07:00 – 24:00</span>
+                </div>
+                <div class="navbar__info__block">
+                    <a href="tel:84862445020">+7 (4862) 44-50-20</a>
+                </div>
+            </div>
         </div>
-        <main>
-
-        </main>
-        <div class="footer">
-
+    </header>
+    <div class="navbar__bar">
+        <div class="navbar__bar__inner is--c-pl">
+            <div class="navbar__bar__top">
+                <div class="navbar__bar__top__logo">
+                    <a href="index.html">
+                        <svg class="svg-logo-dims svg is--logo">
+                            <use xlink:href="img/svg/sprites.svg#logo"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="navbar__bar__top__close">
+                    <button>
+                        <svg class="svg-close-dims svg is--close">
+                            <use xlink:href="img/svg/sprites.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar__bar__menu">
+                <ul>
+                    <li><a href="#">О Клубе</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Расписание</a></li>
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="#">Полезная информация</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="navbar__bar__soc">
+                <!-- Сделать наведение -->
+                <div class="social is--left is--black">
+                    <ul>
+                        <li>
+                            <a href="#">Vk</a>
+                        </li>
+                        <li>
+                            <a href="#">In</a>
+                        </li>
+                        <li>
+                            <a href="#">Fb</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Сделать наведение -->
+            </div>
         </div>
-        <!-- modals -->
-        <script src="dist/js/jquery-3.3.1.min.js"></script>
-        <script src="dist/js/svg4everybody.min.js"></script>
-        <script src="dist/js/main.js"></script>
-        <script>
-            svg4everybody()
-        </script>
+    </div>
+    <main>
+        <div class="banner">
+            <div class="banner__inner">
+
+
+            </div>
+            <div class="banner__circle">
+                <div class="banner__circle__block is--on"></div>
+                <div class="banner__circle__block is--tw"></div>
+                <div class="banner__circle__block is--th"></div>
+            </div>
+        </div>
+        <div class="stats is--white">
+            <div class="stats__inner container">
+                <div class="stats__list">
+                    <div class="stats__block">
+                        <div class="stats__block__inner">
+                            <div class="stats__block__num">1600 м<sup>2</sup></div>
+                            <div class="stats__block__text">Площадь <br> клуба</div>
+                        </div>
+                    </div>
+                    <div class="stats__block">
+                        <div class="stats__block__inner">
+                            <div class="stats__block__num">400</div>
+                            <div class="stats__block__text">Машиномест на <br> бесплатной парковке</div>
+                        </div>
+                    </div>
+                    <div class="stats__block">
+                        <div class="stats__block__inner">
+                            <div class="stats__block__num">3,5 м</div>
+                            <div class="stats__block__text">Высота <br> потолков</div>
+                        </div>
+                    </div>
+                    <div class="stats__block">
+                        <div class="stats__block__inner">
+                            <div class="stats__block__num">180 м<sup>2</sup></div>
+                            <div class="stats__block__text">Бойцовский <br> зал</div>
+                        </div>
+                    </div>
+                    <div class="stats__block">
+                        <div class="stats__block__inner">
+                            <div class="stats__block__num">40</div>
+                            <div class="stats__block__text">Видов профессиональных <br> тренажеров</div>
+                        </div>
+                    </div>
+                    <div class="stats__block">
+                        <div class="stats__block__inner">
+                            <div class="stats__block__num">35</div>
+                            <div class="stats__block__text">Видов групповых <br> программ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tradein">
+            <a href="">
+                <div class="tradein__inner container">
+                    <div class="tradein__text">
+                        <div class="tradein__text__title">+1 месяц</div>
+                        <div class="tradein__text__sub">Карта любого <br> клуба</div>
+                    </div>
+                    <div class="tradein__center">
+                        <div class="tradein__center__sub">Фитнес</div>
+                        <div class="tradein__center__title">Trade in</div>
+                    </div>
+                    <div class="tradein__text">
+                        <div class="tradein__text__title">+5 месяцев</div>
+                        <div class="tradein__text__sub">Договор любого <br> клуба</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="zones">
+            <div class="zones__inner is--c-pl">
+                <div class="zones__left">left</div>
+                <div class="zones__right">
+                    <div class="zones__carousel">
+                        <div class="zones__carousel__inner">
+                            <div class="zones__carousel__wrapper swiper-wrapper">
+                                <div class="zones__carousel__item swiper-slide">
+                                    <img src="img/zones1.jpg" alt="">
+                                    <div class="zones__carousel__item__title">Бойцовская зона</div>
+                                </div>
+                                <div class="zones__carousel__item swiper-slide">
+                                    <img src="img/zones2.jpg" alt="">
+                                    <div class="zones__carousel__item__title">Бойцовская зона</div>
+                                </div>
+                                <div class="zones__carousel__item swiper-slide">
+                                    <img src="img/zones1.jpg" alt="">
+                                    <div class="zones__carousel__item__title">Бойцовская зона</div>
+                                </div>
+                                <div class="zones__carousel__item swiper-slide">
+                                    <img src="img/zones2.jpg" alt="">
+                                    <div class="zones__carousel__item__title">Бойцовская зона</div>
+                                </div>
+                                <div class="zones__carousel__item swiper-slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zones__carousel__controls"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+
+    </div>
+    <!-- modals -->
+    <div id="overlay"></div>
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/svg4everybody.min.js"></script>
+    <script src="dist/js/jquery.gsap.min.js"></script>
+    <script src="dist/js/TimelineMax.min.js"></script>
+    <script src="dist/js/TweenMax.min.js"></script>
+    <script src="dist/js/cssanimation-gsap.min.js"></script>
+    <script src="dist/js/swiper.min.js"></script>
+    <!-- <script src="dist/js/owl.carousel.min.js"></script> -->
+    <script src="dist/js/main.js"></script>
+    <script>
+        svg4everybody()
+    </script>
 </body>
 
 </html>

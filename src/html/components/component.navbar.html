@@ -1,3 +1,56 @@
-<header class="navbar">
-    
+<header class="navbar is--@@type">
+    <div class="navbar__inner container">
+        <div class="navbar__logo">
+            <a href="@@pages.index">
+                <img src="img/logo.svg" alt="@@sitename">
+            </a>
+        </div>
+        <div class="navbar__menu">
+            <button>
+                @@include('../components/component.svg.html', {"name": "menu"})
+                Меню
+            </button>
+        </div>
+        <div class="navbar__info">
+            <div class="navbar__info__block">
+                <span>ПН — вс 07:00 – 24:00</span>
+            </div>
+            <div class="navbar__info__block">
+                <a href="@@phone_link">@@phone</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="navbar__bar">
+    <div class="navbar__bar__inner is--c-pl">
+        <div class="navbar__bar__top">
+            <div class="navbar__bar__top__logo">
+                <a href="@@pages.index">
+                    @@include('component.svg.html', {"name": "logo"})
+                </a>
+            </div>
+            <div class="navbar__bar__top__close">
+                <button>
+                    @@include('component.svg.html', {"name": "close"})
+                </button>
+            </div>
+        </div>
+        <div class="navbar__bar__menu">
+            <ul>
+                <li><a href="#">О Клубе</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Расписание</a></li>
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="navbar__bar__soc">
+            @@include('component.social.html', {
+                "align": "left",
+                "color": "black"
+            })
+        </div>
+    </div>
 </div>

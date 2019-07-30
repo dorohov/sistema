@@ -1,0 +1,236 @@
+.stats {
+    &.is--white {
+        background: #fff;
+    }
+    &.is--grey {
+        background: #f7f7f7;
+    }
+    padding: 110px 0 0;
+    &__inner {
+        max-width: 1340px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__block {
+        max-width: 33.333333%;
+        width: 100%;
+        margin-bottom: 130px;
+        display: flex;
+        justify-content: center;
+        &__inner {
+            max-width: 230px;
+            width: 100%;
+        }
+        &__num {
+            letter-spacing: 0.035em;
+            font-size: 64px;
+            line-height: 115%;
+            @include fontBold();
+            line-height: 50px;
+            margin-bottom: 20px;
+            sup {
+                font-size: 24px;
+                top: -1.5em;
+            }
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 115%;
+            letter-spacing: 0.035em;
+        }
+    }
+}
+
+.tradein {
+    background: linear-gradient(90.3deg, #462271 0.02%, #DD7678 52.08%, #F8A37A 99.97%), #C4C4C4;
+    transition: .25s all ease;
+    &:hover {
+        opacity: .9;
+    }
+    &__inner {
+        height: 145px;
+        max-width: 960px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__center {
+        height: 100%;
+    }
+    &__text {
+        color: #fff;
+        &__title {
+            @include fontBold();
+            font-size: 36px;
+            line-height: 91.5%;
+            margin-bottom: 15px;
+        }
+        &__sub {
+            font-size: 24px;
+            line-height: 91.5%;
+        }
+    }
+    &__center {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 25px;
+        background: url(../../img/tradein_circle.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        &__sub {
+            width: 100%;
+            @include fontItalic();
+            font-size: 36px;
+            line-height: 91.5%;
+        }
+        &__title {
+            font-size: 72px;
+            line-height: 91.5%;
+            @include fontBold();
+        }
+    }
+}
+
+.zones {
+    padding: 130px 0 200px 0;
+    overflow: hidden;
+    &__inner {
+        display: flex;
+    }
+    &__left {
+        min-width: 540px;
+        width: 540px;
+        padding-right: 70px;
+    }
+    &__right {
+        width: 100%;
+    }
+    &__carousel {
+        &__inner {
+            width: 100%;
+            height: 100%;
+            @extend .swiper-container;
+        }
+        &__item {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            &__title {
+                @include fontItalic();
+                font-size: 64px;
+                line-height: 152.5%;
+                color: #181818;
+                margin-top: -30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .tradein {
+        &__text {
+            &__title {
+                font-size: 24px;
+            }
+            &__sub {
+                font-size: 18px;
+            }
+        }
+        &__center {
+            background-size: 85%;
+            &__sub {
+                font-size: 24px;
+            }
+            &__title {
+                font-size: 64px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .stats {
+        &__block {
+            &__num {
+                font-size: 54px;
+                margin-bottom: 10px;
+            }
+            &__text {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .stats {
+        padding-top: 70px;
+        padding-bottom: 10px;
+        &__block {
+            max-width: 50%;
+            margin-bottom: 50px;
+            &__num {
+                font-size: 36px;
+                sup {
+                    top: -.5em;
+                }
+            }
+        }
+    }
+    .tradein {
+        &__inner {
+            justify-content: center;
+        }
+        &__center {
+            background-size: 82%;
+            &__title {
+                font-size: 48px;
+            }
+        }
+        &__text {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .stats {
+        padding-top: 30px;
+        padding-bottom: 25px;
+        &__list {
+            flex-flow: wrap;
+        }
+        &__block {
+            margin-bottom: 15px;
+            &:nth-child(5) {
+                order: 5;
+            }
+            &:nth-child(6) {
+                order: 4;
+            }
+            &__num {
+                font-size: 24px;
+                line-height: 24px;
+                sup {
+                    font-size: 14px;
+                    top: -.8em;
+                }
+            }
+            &__text {
+                font-size: 14px;
+            }
+        }
+    }
+}

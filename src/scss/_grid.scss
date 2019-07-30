@@ -1,0 +1,58 @@
+.container {
+    max-width: #{1480px + 60px};
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.social {
+    position: relative;
+    ul {
+        display: flex;
+        li {
+            a {
+                @include fontBold();
+                font-size: 24px;
+                letter-spacing: 0.035em;
+                transition: .25s all ease;
+                display: block;
+                &:hover {
+                    // Сделать наведение
+                }
+            }
+        }
+    }
+    &.is--left {
+        ul {
+            li {
+                padding-right: 50px;
+            }
+        }
+    }
+    &.is--right {
+        ul {
+            li {
+                padding-left: 50px;
+            }
+        }
+    }
+    &.is--black {
+        ul {
+            li {
+                a {
+                    color: #272727;
+                }
+            }
+        }
+    }
+    &.is--primary {
+        ul {
+            li {
+                a {
+                    color: $c-primary;
+                }
+            }
+        }
+    }
+}

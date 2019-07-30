@@ -1,0 +1,11 @@
+@mixin primaryGradient() {
+    background: linear-gradient(90.5deg, #F5CB63 0.05%, #FEDC78 93.5%), #F7F7F7;
+}
+
+@mixin fontItalic() {
+    font-family: 'Lemon Tuesday';
+}
+
+@mixin fontBold() {
+    font-family: 'HeliosCompressedC';
+}

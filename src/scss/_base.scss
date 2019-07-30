@@ -1,11 +1,21 @@
 body {
     color: #272727;
+    font-family: 'Akzidenz-Grotesk Pro';
+    position: relative;
+    &.is--overlay {
+        overflow: hidden;
+        #overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 
 *,
 *::after,
 *::before {
     box-sizing: border-box;
+    outline: none;
 }
 
 a {
@@ -25,4 +35,49 @@ img {
 svg,
 img {
     vertical-align: middle;
+}
+
+#overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(#000, .5);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s all ease;
+    cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #272727;
+    letter-spacing: 0.035em;
+    line-height: 115%;
+    margin: 0 0 25px 0;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
 }

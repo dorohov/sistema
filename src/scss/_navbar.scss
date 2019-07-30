@@ -1,0 +1,335 @@
+.navbar {
+    transition: .25s all ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    &.is--transparent {
+        background: transparent;
+        .navbar {
+            &__inner {
+                height: 150px;
+            }
+        }
+    }
+    &.is--default {
+        background: #212121;
+        .navbar {
+            &__inner {
+                height: 100px;
+            }
+        }
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        transition: .25s all ease;
+    }
+    &__logo {
+        max-width: 158px;
+        width: 100%;
+        margin-right: 75px;
+    }
+    &__menu {
+        white-space: nowrap;
+        button {
+            @include fontBold();
+            border: none;
+            padding: 20px;
+            background: transparent;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 18px;
+            cursor: pointer;
+            outline: none;
+            svg {
+                fill: $c-primary;
+                vertical-align: baseline;
+                margin-right: 5px;
+            }
+        }
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        &__block {
+            margin-left: 70px;
+            span,
+            a {
+                display: block;
+                color: #FCFCFC;
+                font-size: 18px;
+                @include fontBold();
+                text-transform: uppercase;
+                padding-left: 15px;
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -4px;
+                    left: 0;
+                    border-radius: 100%;
+                    background: $c-primary;
+                }
+            }
+            a {
+                transition: .25s all ease;
+                &:hover {
+                    color: #FFBE00;
+                }
+            }
+        }
+    }
+    &__bar {
+        min-width: 50%;
+        height: 100%;
+        position: fixed;
+        z-index: 1999;
+        background: $c-primary;
+        transform: translateX(-100%);
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            overflow: auto;
+            padding: 45px 40px 90px 0;
+            overflow: hidden;
+            &.is--comp {
+                overflow: auto;
+            }
+        }
+        &__top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            &__logo {
+                svg {
+                    fill: #353535;
+                }
+            }
+            &__close {
+                button {
+                    border: none;
+                    cursor: pointer;
+                    background: #fff;
+                    border-radius: 100%;
+                    display: flex;
+                    width: 65px;
+                    height: 65px;
+                    align-items: center;
+                    justify-content: center;
+                    transition: .25s all ease;
+                    &:hover {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        &__menu {
+            margin-bottom: 30px;
+            width: 100%;
+            ul {
+                li {
+                    a {
+                        font-size: 48px;
+                        @include fontBold();
+                        text-transform: uppercase;
+                        display: block;
+                        text-shadow: rgb(18, 18, 18) 1px 0px 0px, rgb(18, 18, 18) 0.540302px 0.841471px 0px, rgb(18, 18, 18) -0.416147px 0.909297px 0px, rgb(18, 18, 18) -0.989992px 0.14112px 0px, rgb(18, 18, 18) -0.653644px -0.756802px 0px, rgb(18, 18, 18) 0.283662px -0.958924px 0px, rgb(18, 18, 18) 0.96017px -0.279415px 0px;
+                        color: $c-primary;
+                        transition: .25s all ease;
+                        padding: 10px 0;
+                        &:hover {
+                            color: rgb(18, 18, 18);
+                            text-shadow: rgb(249, 211, 109) 1px 0px 0px, rgb(249, 211, 109) 0.540302px 0.841471px 0px, rgb(249, 211, 109) -0.416147px 0.909297px 0px, rgb(249, 211, 109) -0.989992px 0.14112px 0px, rgb(249, 211, 109) -0.653644px -0.756802px 0px, rgb(249, 211, 109) 0.283662px -0.958924px 0px, rgb(249, 211, 109) 0.96017px -0.279415px 0px;
+                        }
+                    }
+                }
+            }
+        }
+        &__soc {
+            .social {
+                ul {
+                    li {
+                        transform: translateY(0%);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background: #212121;
+    position: relative;
+    overflow: hidden;
+    &__inner {
+        min-height: 100vh;
+    }
+    &__circle {
+        &__block {
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 100%;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            &.is--on {
+                width: 70vw;
+                height: 70vw;
+                animation: pulse 2.7s infinite;
+            }
+            &.is--tw {
+                width: 48vw;
+                height: 48vw;
+                animation: pulse1 2.7s infinite;
+            }
+            &.is--th {
+                width: 33vw;
+                height: 33vw;
+                border: none;
+                @include primaryGradient();
+                animation: pulse2 2.7s infinite;
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .navbar {
+        &.is--transparent {
+            .navbar {
+                &__inner {
+                    height: 100px;
+                }
+            }
+        }
+        &__info {
+            display: none;
+        }
+        &__logo {
+            margin-right: 40px;
+        }
+        &__menu {
+            margin-left: auto;
+        }
+        &__bar {
+            &__top {
+                &__close {
+                    button {
+                        height: 45px;
+                        width: 45px;
+                        svg {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        &__bar {
+            width: 100%;
+            &__menu {
+                ul {
+                    li {
+                        a {
+                            font-size: 34px;
+                            line-height: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        &__circle {
+            &__block {
+                &.is--th {
+                    width: 70vw;
+                    height: 70vw;
+                }
+                &.is--tw {
+                    width: 106vw;
+                    height: 106vw;
+                }
+                &.is--on {
+                    width: 160vw;
+                    height: 160vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-height: 850px) {
+    .navbar {
+        &__bar {
+            &__menu {
+                ul {
+                    li {
+                        a {
+                            font-size: 38px;
+                            line-height: 38px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(#fff, 0.04);
+    }
+    70% {
+        transform: translate(-50%, -50%) scale(1.05);
+        box-shadow: 0 0 0 40px rgba(#fff, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(#fff, 0);
+    }
+}
+
+@keyframes pulse1 {
+    0% {
+      box-shadow: 0 0 0 0 rgba(#fff, 0.04);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        box-shadow: 0 0 0 40px rgba(#fff, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(#fff, 0);
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+      box-shadow: 0 0 0 0 rgba($c-primary, 0.4);
+    }
+    30% {
+        transform: translate(-50%, -50%) scale(1.1);
+        box-shadow: 0 0 0 40px rgba($c-primary, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba($c-primary, 0);
+    }
+}

@@ -4,7 +4,9 @@
     @@include('components/component.head.html', {"title": "Главная"})
 </head>
 <body>
-    @@include('components/component.navbar.html')
+    @@include('components/component.navbar.html', {
+        "type": "transparent"
+    })
     <main>
         @@include('index/index.main.html')
     </main>

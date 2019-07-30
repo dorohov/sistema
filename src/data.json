@@ -1,6 +1,14 @@
 {
     "sitename": "Система Комплекс",
     "lang": "ru",
+    "phone": "+7 (4862) 44-50-20",
+    "phone_link": "tel:84862445020",
+    "mail": "club@sistemaorel.ru",
+    "social": {
+        "vk": "#",
+        "inst": "#",
+        "facebook": "#"
+    },
     "pages": {
         "index": "index.html",
         "directions": "directions.html",

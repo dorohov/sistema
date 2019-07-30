@@ -1,5 +1,6 @@
-// @import "../../img/svg/sprite.scss";
+@import "../../img/svg/sprite.scss";
 @import "vars";
+@import "swiper";
 @import "mixins";
 @import "normalize";
 @import "base";
@@ -12,3 +13,5 @@
 @import "footer";
 // @import "slick";
 @import "modals";
+@import "simple";
+// @import "owl";
