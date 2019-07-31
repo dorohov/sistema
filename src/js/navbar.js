@@ -81,7 +81,6 @@
                         .addClass('is--default')
             }else {
                 if(isNavbarTransparent.length > 0) {
-                console.log('default')
                     $('.navbar')
                         .removeClass('is--default')
                         .addClass('is--transparent')

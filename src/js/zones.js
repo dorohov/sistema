@@ -2,15 +2,84 @@
     "use strict"
     $(function() {
 
-        var swiper = new Swiper('.zones__carousel__inner', {
-            slidesPerView:  2,
-            // centeredSlides: true,
-            spaceBetween: 30,
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-            },
-          });
+      function setDesktopNavsContainerWidth() {
+        setTimeout(function() {
+          var itemWidth = $('.zones__carousel__item.swiper-slide').css('width')
+          $('.zones__carousel__mouse').css({
+            maxWidth: itemWidth
+          })
+        }, 10)
+      }
+
+      function setSlideInfo(slideId) {
+        var currentSlide = $('.zones__carousel__item[data-id="' + slideId + '"]')[0],
+            currentInfo = {
+              id: slideId,
+              title: $(currentSlide).data('title'),
+              text: $(currentSlide).data('text'),
+              link: $(currentSlide).data('link')
+            }
+        
+        $('.zones__left__heading').html(currentInfo.title)
+        $('.zones__left__content').html(currentInfo.text)
+        $('.zones__left__btn a').attr('href', currentInfo.link)
+
+      }
+
+      function setSlidesTitle() {
+        var slides = $('.zones__carousel__item')
+        for(var i = 0; i < slides.length - 1; i++) {
+          var thisTitle = $(slides[i]).data('title')
+          thisTitle = thisTitle.replace(' <br>', '')
+          var thisTitleBlock = $(slides[i]).children('.zones__carousel__item__title')
+          thisTitleBlock.html(thisTitle)
+
+        }
+      }
+
+      setDesktopNavsContainerWidth()
+
+      $(window).resize(function() {
+        setDesktopNavsContainerWidth()
+      })
+
+      var swiper = new Swiper('.zones__carousel__inner', {
+        slidesPerView:  2,
+        spaceBetween: 30,
+        touchRatio: 0,
+        breakpoints: {
+          1200: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            touchRatio: 2,
+          }
+        },
+        on: {
+          init: function() {
+            setSlidesTitle()
+            setSlideInfo(0)
+          },
+          slideChange: function() {
+            setSlideInfo(swiper.activeIndex)
+          }
+        }
+      });
+
+      $('.zones__carousel__mouse .is--left, .zones__carousel__controls button.is--prev').on('click', function() {
+        swiper.slidePrev();
+      })
+
+      $('.zones__carousel__mouse .is--right, .zones__carousel__controls button.is--next').on('click', function() {
+        swiper.slideNext();
+      })
+      
+      $('.zones__carousel__mouse').hover(function() {
+
+      }, function() {
+
+      })
+
+      
 
     })
 })(jQuery);

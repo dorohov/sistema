@@ -56,3 +56,129 @@
         }
     }
 }
+
+.heading {
+    margin-bottom: 45px;
+    position: relative;
+    overflow: hidden;
+    &__sub {
+        @include fontItalic();
+        font-size: 72px;
+        line-height: 91.5%;
+        position: relative;
+        z-index: 10;
+    }
+    &__title {
+        @include fontBold();
+        font-size: 72px;
+        line-height: 91.5%;
+        text-transform: uppercase;
+        display: inline-block;
+        padding-right: 50px;
+    }
+    &.is--black {
+        color: #181818;
+    }
+    &.is--white {
+        color: #fff;
+    }
+    &.is--bg-ff {
+        .heading {
+            &__title {
+                background: #fff;
+            }
+        }
+    }
+    &.is--bg-t0 {
+        .heading {
+            &__title {
+                background: #202020;
+            }
+        }
+    }
+    &.is--arrow {
+        &.is--black {
+            .heading {
+                &__title {
+                    &::after {
+                        content: url(../../img/heading_arrow-dark.svg);
+                    }
+                }
+            }
+        }
+        &.is--white {
+            .heading {
+                &__title {
+                    &::after {
+                        content: url(../../img/heading_arrow-white.svg);
+                    }
+                }
+            }
+        }
+        .heading {
+            &__title {
+                &::after {
+                    position: absolute;
+                    right: 0;
+                    bottom: 7px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 25px 60px;
+    background: $c-primary;
+    position: relative;
+    &:hover {
+        &::before {
+            height: 100%;
+        }
+        span {
+            color: $c-primary;
+        }
+    }
+    span {
+        color: #272727;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.035em;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 10;
+        transition: .25s all ease;
+    }
+    &::before {
+        content: '';
+        width: 100%;
+        height: 0;
+        position: absolute;
+        z-index: 5;
+        background: #272727;
+        left: 0;
+        bottom: 0;
+        transition: .25s all ease;
+    }
+}
+
+@media (max-width: 1440px) {
+    .heading {
+        &__sub,
+        &__title {
+            font-size: 64px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        margin-bottom: 30px;
+        &__sub,
+        &__title {
+            font-size: 36px;
+        }
+    }
+}
