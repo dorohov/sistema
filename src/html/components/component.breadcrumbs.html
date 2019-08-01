@@ -1,0 +1,8 @@
+<div class="breadcrumbs">
+    <ul>
+        @@for(var i = 0; i < list.length; i++) {
+            <li><a href="`+list[i].url+`">`+list[i].title+`</a></li>
+        }
+        <li>@@current</li>
+    </ul>
+</div>

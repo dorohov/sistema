@@ -73,8 +73,12 @@
         font-size: 72px;
         line-height: 91.5%;
         text-transform: uppercase;
-        display: inline-block;
-        padding-right: 50px;
+        span {
+            display: inline-block;
+            padding-right: 30px;
+            position: relative;
+            z-index: 9;
+        }
     }
     &.is--black {
         color: #181818;
@@ -85,14 +89,18 @@
     &.is--bg-ff {
         .heading {
             &__title {
-                background: #fff;
+                span {
+                    background: #fff;
+                }
             }
         }
     }
     &.is--bg-t0 {
         .heading {
             &__title {
-                background: #202020;
+                span {
+                    background: #202020;
+                }
             }
         }
     }
@@ -121,7 +129,6 @@
                     position: absolute;
                     right: 0;
                     bottom: 7px;
-                    z-index: -1;
                 }
             }
         }
@@ -162,6 +169,36 @@
         bottom: 0;
         transition: .25s all ease;
     }
+    &.is--white {
+        &:hover {
+            span {
+                color: #272727;
+            }
+        }
+        &::before {
+            background: #fff;
+        }
+    }
+}
+
+.breadcrumbs {
+    margin-bottom: 55px;
+    ul {
+        display: flex;
+        li {
+            font-size: 14px;
+            padding-right: 5px;
+            color: #272727;
+            a { 
+                color: #626262;
+                white-space: nowrap;
+                &::after {
+                    content: ' ... ';
+                    color: #626262 !important;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1440px) {
@@ -173,6 +210,15 @@
     }
 }
 
+@media (max-width: 1025px) {
+    .btn {
+        padding: 17px 35px;
+        span {
+            font-size: 12px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .heading {
         margin-bottom: 30px;
@@ -180,5 +226,8 @@
         &__title {
             font-size: 36px;
         }
+    }
+    .breadcrumbs {
+        display: none;
     }
 }

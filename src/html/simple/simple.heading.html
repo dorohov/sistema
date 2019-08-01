@@ -1,0 +1,26 @@
+<div class="headingbar">
+    <div class="headingbar__inner container">
+        <div class="headingbar__left">
+            @@include('../components/component.breadcrumbs.html', {
+                "list": [
+                    {
+                        "title": "Главная",
+                        "url": "@@pages.index"
+                    }
+                ],
+                "current": "@@breadcrumbs"
+            })
+            <div class="heading is--black">
+                <div class="heading__sub">@@sub</div>
+                <div class="heading__title"><span>@@title</span></div>
+            </div>
+        </div>
+        <!-- search, card, empty -->
+        @@if(mode == 'search') {
+            @@include('simple.heading.search.html')
+        }
+        @@if(mode == 'card') {
+            @@include('simple.heading.card.html')
+        }
+    </div>
+</div>

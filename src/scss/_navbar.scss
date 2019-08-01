@@ -92,6 +92,8 @@
         z-index: 1999;
         background: $c-primary;
         transform: translateX(-100%);
+        top: 0;
+        left: 0;
         &__inner {
             display: flex;
             flex-direction: column;
