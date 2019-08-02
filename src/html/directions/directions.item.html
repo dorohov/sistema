@@ -1,0 +1,71 @@
+<div class="directions-item article">
+    <div class="directions-item__inner container">
+        <div class="directions-item__left">
+            @@include('../components/component.breadcrumbs.html', {
+                "list": [
+                    {
+                        "title": "Главная",
+                        "url": "@@pages.index"
+                    },
+                    {
+                        "title": "Направления",
+                        "url": "@@pages.directions"
+                    }
+                ],
+                "current": "Студия Real Ryder"
+            })
+            <div class="heading is--black">
+                <div class="heading__sub">Студия</div>
+                <div class="heading__title"><span>Real Ryder</span></div>
+            </div>
+            <div class="directions-item__left__desc">
+                <p>Фитнес клуб «Система Комплекс» представляет новый уникальный формат групповой сайкл тренировки Real Ryder.</p>
+                <p>Это захватывающая и увлекательная атмосфера, полноценная физическая тренировка, эффективная аэробная и кардио нагрузка, максимальное сжигание калорий, интенсивная тренировка мышц верхней и нижней частей тела, тренировка баланса, физическое развитие и взрыв эмоций.</p>
+            </div>
+            <div class="directions-item__left__list">
+                <div class="directions-item__left__list__block">
+                    <div class="directions-item__left__list__block__inner">
+                        <div class="directions-item__left__list__block__title">
+                            <span>01</span> Real Ryder
+                        </div>
+                        <div class="directions-item__left__list__block__desc">Настоящая велогонка с максимальной реалистичностью!</div>
+                    </div>
+                </div>
+                <div class="directions-item__left__list__block">
+                    <div class="directions-item__left__list__block__inner">
+                        <div class="directions-item__left__list__block__title">
+                            <span>02</span> Real Ryder
+                        </div>
+                        <div class="directions-item__left__list__block__desc">Эффективный формат тренировки как для новичков, так и для профессионалов!</div>
+                    </div>
+                </div>
+                <div class="directions-item__left__list__block">
+                    <div class="directions-item__left__list__block__inner">
+                        <div class="directions-item__left__list__block__title">
+                            <span>03</span> Real Ryder
+                        </div>
+                        <div class="directions-item__left__list__block__desc">Новое уникальное поколение тренажеров, дающее максимум динамики и плавности движений в трех измерениях!</div>
+                    </div>
+                </div>
+                <div class="directions-item__left__list__block">
+                    <div class="directions-item__left__list__block__inner">
+                        <div class="directions-item__left__list__block__title">
+                            <span>04</span> Real Ryder
+                        </div>
+                        <div class="directions-item__left__list__block__desc">Присоединяйся и покоряй вершины велоспорта вместе с нами!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="directions-item__left__cop">* Посещение урока бесплатно <br> по расписанию.</div>
+        </div>
+        <div class="directions-item__right">
+            <div class="directions-item__right__img">
+                <div class="directions-item__right__container">
+                    <img src="img/directions-item.png" alt="Студия Real Ryder">
+                </div>
+                <div class="directions-item__right__circle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('directions.item.line.html')

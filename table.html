@@ -12,7 +12,7 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ffed00">
     <meta name="msapplication-TileColor" content="#3c3c3c">
     <meta name="theme-color" content="#000000">
-    <title>Наши направления — Система Комплекс</title>
+    <title>Расписание занятий — Система Комплекс</title>
     <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
@@ -100,12 +100,12 @@
 
                             <li><a href="index.html">Главная</a></li>
 
-                            <li>Направления</li>
+                            <li>Расписание</li>
                         </ul>
                     </div>
                     <div class="heading is--black">
-                        <div class="heading__sub">Наши</div>
-                        <div class="heading__title"><span>Направления</span></div>
+                        <div class="heading__sub">Расписание</div>
+                        <div class="heading__title"><span>Занятий</span></div>
                     </div>
                 </div>
                 <!-- search, card, empty -->
@@ -127,9 +127,51 @@
 
             </div>
         </div>
-        <div class="directions-body">
-            <div class="directions-body__inner container">
+        <div class="table-filters">
+            <div class="table-filters__inner container">
                 <div class="directions-body__filters">
+                    <div class="directions-body__filters__block">
+                        <div class="filters-block">
+                            <div class="filters-block__inner">
+                                <div class="filters-block__heading">Время</div>
+                                <div class="filters-block__body">
+                                    <div class="filters-block__row is--w100">
+                                        <div class="checkbox is--default">
+                                            <input type="checkbox" id="f11">
+                                            <label for="f11" class="is--sq">
+                                                <span class="is--sq__inner"></span>
+                                            </label>
+                                            <label for="f11" class="is--label">07:00 - 15:00</label>
+                                        </div>
+                                    </div>
+                                    <div class="filters-block__row is--w100">
+                                        <div class="checkbox is--default">
+                                            <input type="checkbox" id="f12">
+                                            <label for="f12" class="is--sq">
+                                                <span class="is--sq__inner"></span>
+                                            </label>
+                                            <label for="f12" class="is--label">15:00 - 24:00</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filters-block__heading pt-40">Тренер</div>
+                                <div class="filters-block__body">
+                                    <div class="filters-block__row is--w@@width">
+                                        <div class="select">
+                                            <div class="select__label">Не важно</div>
+                                            <div class="select__dropdown">
+                                                <ul>
+                                                    <li>Не важно</li>
+                                                    <li>Мужчина</li>
+                                                    <li>Женщина</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="directions-body__filters__block">
                         <div class="filters-block">
                             <div class="filters-block__inner">
@@ -150,7 +192,7 @@
                                             <label for="f12" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f12" class="is--label">Дети 3-13 лет</label>
+                                            <label for="f12" class="is--label">Подростки 14-17 лет</label>
                                         </div>
                                     </div>
                                     <div class="filters-block__row is--w100">
@@ -159,7 +201,7 @@
                                             <label for="f13" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f13" class="is--label">Подростки 14-17 лет</label>
+                                            <label for="f13" class="is--label">Взрослые 18-47 лет</label>
                                         </div>
                                     </div>
                                     <div class="filters-block__row is--w100">
@@ -168,70 +210,7 @@
                                             <label for="f14" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f14" class="is--label">Взрослые 18-40 лет</label>
-                                        </div>
-                                    </div>
-                                    <div class="filters-block__row is--w100">
-                                        <div class="checkbox is--default">
-                                            <input type="checkbox" id="f15">
-                                            <label for="f15" class="is--sq">
-                                                <span class="is--sq__inner"></span>
-                                            </label>
-                                            <label for="f15" class="is--label">Взрослые 41-54 лет</label>
-                                        </div>
-                                    </div>
-                                    <div class="filters-block__row is--w100">
-                                        <div class="checkbox is--default">
-                                            <input type="checkbox" id="f16">
-                                            <label for="f16" class="is--sq">
-                                                <span class="is--sq__inner"></span>
-                                            </label>
-                                            <label for="f16" class="is--label">Взрослые 55+ лет</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="directions-body__filters__block">
-                        <div class="filters-block">
-                            <div class="filters-block__inner">
-                                <div class="filters-block__heading">Направление</div>
-                                <div class="filters-block__body">
-                                    <div class="filters-block__row is--w100">
-                                        <div class="checkbox is--default">
-                                            <input type="checkbox" id="f21">
-                                            <label for="f21" class="is--sq">
-                                                <span class="is--sq__inner"></span>
-                                            </label>
-                                            <label for="f21" class="is--label">Тренажерный зал</label>
-                                        </div>
-                                    </div>
-                                    <div class="filters-block__row is--w100">
-                                        <div class="checkbox is--default">
-                                            <input type="checkbox" id="f22">
-                                            <label for="f22" class="is--sq">
-                                                <span class="is--sq__inner"></span>
-                                            </label>
-                                            <label for="f22" class="is--label">Детский фитнес</label>
-                                        </div>
-                                    </div>
-                                    <div class="filters-block__row is--w100">
-                                        <div class="checkbox is--default">
-                                            <input type="checkbox" id="f23">
-                                            <label for="f23" class="is--sq">
-                                                <span class="is--sq__inner"></span>
-                                            </label>
-                                            <label for="f23" class="is--label">Групповые программы</label>
-                                        </div>
-                                    </div>
-                                    <div class="filters-block__row is--w100">
-                                        <div class="checkbox is--default">
-                                            <input type="checkbox" id="f24">
-                                            <label for="f24" class="is--sq">
-                                                <span class="is--sq__inner"></span>
-                                            </label>
-                                            <label for="f24" class="is--label">Спа и массаж</label>
+                                            <label for="f14" class="is--label">Взрослые 48 +</label>
                                         </div>
                                     </div>
                                 </div>
@@ -241,7 +220,7 @@
                     <div class="directions-body__filters__block is--tw">
                         <div class="filters-block">
                             <div class="filters-block__inner">
-                                <div class="filters-block__heading">Цель</div>
+                                <div class="filters-block__heading">Направление</div>
                                 <div class="filters-block__body">
                                     <div class="filters-block__row is--w50">
                                         <div class="checkbox is--default">
@@ -249,7 +228,7 @@
                                             <label for="f31" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f31" class="is--label">Сбросить вес</label>
+                                            <label for="f31" class="is--label">Студия Real Ryder</label>
                                         </div>
                                     </div>
                                     <div class="filters-block__row is--w50">
@@ -258,7 +237,7 @@
                                             <label for="f32" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f32" class="is--label">Улучшить физическую форму</label>
+                                            <label for="f32" class="is--label">Массаж</label>
                                         </div>
                                     </div>
                                     <div class="filters-block__row is--w50">
@@ -267,7 +246,7 @@
                                             <label for="f33" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f33" class="is--label">Накачать мыщцы</label>
+                                            <label for="f33" class="is--label">Студия TRX</label>
                                         </div>
                                     </div>
                                     <div class="filters-block__row is--w50">
@@ -276,7 +255,7 @@
                                             <label for="f34" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f34" class="is--label">Здоровая спина</label>
+                                            <label for="f34" class="is--label">Студия загара</label>
                                         </div>
                                     </div>
                                     <div class="filters-block__row is--w50">
@@ -285,7 +264,7 @@
                                             <label for="f35" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f35" class="is--label">Выносливость</label>
+                                            <label for="f35" class="is--label">Студия Air yoga</label>
                                         </div>
                                     </div>
                                     <div class="filters-block__row is--w50">
@@ -294,112 +273,13 @@
                                             <label for="f36" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f36" class="is--label">Гибкость</label>
-                                        </div>
-                                    </div>
-                                    <div class="filters-block__row is--w50">
-                                        <div class="checkbox is--default">
-                                            <input type="checkbox" id="f37">
-                                            <label for="f37" class="is--sq">
-                                                <span class="is--sq__inner"></span>
-                                            </label>
-                                            <label for="f37" class="is--label">Научиться танцевать</label>
+                                            <label for="f36" class="is--label">Персональный тренинг</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="directions-body__list">
-                    <div class="directions-body__list__inner">
-                        <div class="directions-body__block">
-                            <a href="directions.item.html" class="directions-body__block__inner">
-                                <div class="directions-body__block__img">
-                                    <img src="img/directions-block-placeholder.jpg" data-src="img/directions-block1.jpg" alt="Групповые программы" class="lazy">
-                                </div>
-                                <div class="directions-body__block__title">
-                                    <div class="directions-body__block__title__block">
-                                        <div class="directions-body__block__title__sub">Групповые</div>
-                                        <div class="directions-body__block__title__text"><span>программы</span></div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="directions-body__block">
-                            <a href="directions.item.html" class="directions-body__block__inner">
-                                <div class="directions-body__block__img">
-                                    <img src="img/directions-block-placeholder.jpg" data-src="img/directions-block2.jpg" alt="Тренажерный зал" class="lazy">
-                                </div>
-                                <div class="directions-body__block__title">
-                                    <div class="directions-body__block__title__block">
-                                        <div class="directions-body__block__title__sub">Тренажерный</div>
-                                        <div class="directions-body__block__title__text"><span>зал</span></div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="directions-body__block">
-                            <a href="directions.item.html" class="directions-body__block__inner">
-                                <div class="directions-body__block__img">
-                                    <img src="img/directions-block-placeholder.jpg" data-src="img/directions-block3.jpg" alt="Бойцовский зал" class="lazy">
-                                </div>
-                                <div class="directions-body__block__title">
-                                    <div class="directions-body__block__title__block">
-                                        <div class="directions-body__block__title__sub">Бойцовский</div>
-                                        <div class="directions-body__block__title__text"><span>зал</span></div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="directions-body__block">
-                            <a href="directions.item.html" class="directions-body__block__inner">
-                                <div class="directions-body__block__img">
-                                    <img src="img/directions-block-placeholder.jpg" data-src="img/directions-block4.jpg" alt="Студия Real Ryder" class="lazy">
-                                </div>
-                                <div class="directions-body__block__title">
-                                    <div class="directions-body__block__title__block">
-                                        <div class="directions-body__block__title__sub">Студия</div>
-                                        <div class="directions-body__block__title__text"><span>Real Ryder</span></div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="directions-body__block">
-                            <a href="directions.item.html" class="directions-body__block__inner">
-                                <div class="directions-body__block__img">
-                                    <img src="img/directions-block-placeholder.jpg" data-src="img/directions-block5.jpg" alt="Студия TRX" class="lazy">
-                                </div>
-                                <div class="directions-body__block__title">
-                                    <div class="directions-body__block__title__block">
-                                        <div class="directions-body__block__title__sub">Студия</div>
-                                        <div class="directions-body__block__title__text"><span>TRX</span></div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="directions-body__block">
-                            <a href="directions.item.html" class="directions-body__block__inner">
-                                <div class="directions-body__block__img">
-                                    <img src="img/directions-block-placeholder.jpg" data-src="img/directions-block6.jpg" alt="Студия Air yoga" class="lazy">
-                                </div>
-                                <div class="directions-body__block__title">
-                                    <div class="directions-body__block__title__block">
-                                        <div class="directions-body__block__title__sub">Студия</div>
-                                        <div class="directions-body__block__title__text"><span>Air yoga</span></div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="directions-body__load">
-                    <button>
-                        <svg class="svg-reload-dims svg is--reload">
-                            <use xlink:href="img/svg/sprites.svg#reload"></use>
-                        </svg>
-                        загрузить еще
-                    </button>
                 </div>
             </div>
         </div>

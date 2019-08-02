@@ -1,0 +1,93 @@
+<div class="directions-body__filters">
+    <div class="directions-body__filters__block">
+        <div class="filters-block">
+            <div class="filters-block__inner">
+                <div class="filters-block__heading">Время</div>
+                <div class="filters-block__body">
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f11",
+                        "label": "07:00 - 15:00",
+                        "width": "100"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f12",
+                        "label": "15:00 - 24:00",
+                        "width": "100"
+                    })
+                </div>
+                <div class="filters-block__heading pt-40">Тренер</div>
+                <div class="filters-block__body">
+                    @@include('../form/filters.select.html')
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="directions-body__filters__block">
+        <div class="filters-block">
+            <div class="filters-block__inner">
+                <div class="filters-block__heading">Возраст</div>
+                <div class="filters-block__body">
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f11",
+                        "label": "Дети до 3 лет",
+                        "width": "100"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f12",
+                        "label": "Подростки 14-17 лет",
+                        "width": "100"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f13",
+                        "label": "Взрослые 18-47 лет",
+                        "width": "100"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f14",
+                        "label": "Взрослые 48 +",
+                        "width": "100"
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="directions-body__filters__block is--tw">
+        <div class="filters-block">
+            <div class="filters-block__inner">
+                <div class="filters-block__heading">Направление</div>
+                <div class="filters-block__body">
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f31",
+                        "label": "Студия Real Ryder",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f32",
+                        "label": "Массаж",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f33",
+                        "label": "Студия TRX",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f34",
+                        "label": "Студия загара",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f35",
+                        "label": "Студия Air yoga",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f36",
+                        "label": "Персональный тренинг",
+                        "width": "50"
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

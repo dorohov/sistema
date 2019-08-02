@@ -32,10 +32,151 @@ input[type="email"] {
     }
 }
 
+.filters {
+    &-block {
+        &__heading {
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-size: 24px;
+        }
+        &__row {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.is--w50 {
+                max-width: 50%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.checkbox {
+    &.is--default {
+        display: flex;
+        align-items: center;
+        input {
+            display: none;
+            &:checked {
+                & + label {
+                    &.is--sq {
+                        .is--sq__inner {
+                            opacity: 1;
+                            border-radius: 0;
+                            transform: none;
+                        }
+                    }
+                }
+            }
+        }
+        label {
+            cursor: pointer;
+            &.is--sq {
+                border: 1px solid #B6B6B6;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .is--sq__inner {
+                    width: 14px;
+                    height: 14px;
+                    background: $c-primary;
+                    display: block;
+                    border-radius: 100%;
+                    transform: scale(.5);
+                    opacity: 0;
+                    transition: .25s all ease;
+                }
+            }
+            &.is--label {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.select {
+    width: 220px;
+    position: relative;
+    user-select: none;
+    &.is--open {
+        .select {
+            &__dropdown {
+                display: block;
+            }
+        }
+    }
+    &__label {
+        padding: 18px 40px 18px 20px;
+        border: 1px solid #B6B6B6;
+        position: relative;
+        cursor: pointer;
+        &::after {
+            content: url(../../img/dropdown.svg);
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            margin-top: -6px;
+        }
+    }
+    &__dropdown {
+        padding: 12px 0;
+        position: absolute;
+        top: 100%;
+        border: 1px solid #B6B6B6;
+        border-top: 0;
+        width: 100%;
+        left: 0;
+        display: none;
+        ul {
+            li {
+                padding: 12px 20px;
+                cursor: pointer;
+                transition: .25s all ease;
+                &:hover {
+                    color: $c-primary;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     input[type="text"],
     input[type="password"],
     input[type="email"] {
         padding: 14px 40px 14px 20px;
+    }
+    .filters {
+        &-block {
+            &__heading {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            &__row {
+                margin-bottom: 10px;
+                &.is--w50 {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .checkbox {
+        label {
+            &.is--sq {
+                width: 18px !important;
+                height: 18px !important;
+                .is--sq__inner {
+                    width: 12px !important;
+                    height: 12px !important;
+                }
+            }
+            &.is--label {
+                font-size: 14px;
+            }
+        }
     }
 }
