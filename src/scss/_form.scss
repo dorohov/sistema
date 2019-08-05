@@ -131,6 +131,8 @@ input[type="email"] {
         width: 100%;
         left: 0;
         display: none;
+        z-index: 10;
+        background: #fff;
         ul {
             li {
                 padding: 12px 20px;
@@ -139,6 +141,46 @@ input[type="email"] {
                 &:hover {
                     color: $c-primary;
                 }
+            }
+        }
+    }
+}
+
+.switcher {
+    display: flex;
+    align-items: center;
+    &__input {
+        margin-right: 8px;
+        input {
+            display: none;
+            &:checked + label {
+                border-color: $c-primary;
+                &::after {
+                    left: calc(100% - 17px);
+                    background: $c-primary;
+                }
+            }
+        }
+        label {
+            display: block;
+            width: 50px;
+            height: 23px;
+            border: 2px solid #B6B6B6;
+            border-radius: 50px;
+            cursor: pointer;
+            position: relative;
+            transition: .25s all ease;
+            &::after {
+                width: 15px;
+                height: 15px;
+                background: #B6B6B6;
+                transition: .25s all ease;
+                display: block;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                content: '';
+                border-radius: 100%;
             }
         }
     }

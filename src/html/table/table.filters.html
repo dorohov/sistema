@@ -1,4 +1,4 @@
-<div class="directions-body__filters">
+<div class="directions-body__filters is--m7n">
     <div class="directions-body__filters__block">
         <div class="filters-block">
             <div class="filters-block__inner">
@@ -17,7 +17,25 @@
                 </div>
                 <div class="filters-block__heading pt-40">Тренер</div>
                 <div class="filters-block__body">
-                    @@include('../form/filters.select.html')
+                    @@include('../form/filters.select.html', {
+                        "label": "Не важно",
+                        "list": [
+                            {
+                                "label": "Не важно"
+                            },
+                            {
+                                "label": "Мужчина"
+                            },
+                            {
+                                "label": "Женщина"
+                            }
+                        ]
+                    })
+                    <br><br>
+                    @@include('../form/filters.switcher.html', {
+                        "name": "sw1",
+                        "label": "Без платных занятий"
+                    })
                 </div>
             </div>
         </div>
@@ -28,22 +46,22 @@
                 <div class="filters-block__heading">Возраст</div>
                 <div class="filters-block__body">
                     @@include('../form/filters.checkbox.html', {
-                        "name": "f11",
+                        "name": "f21",
                         "label": "Дети до 3 лет",
                         "width": "100"
                     })
                     @@include('../form/filters.checkbox.html', {
-                        "name": "f12",
+                        "name": "f22",
                         "label": "Подростки 14-17 лет",
                         "width": "100"
                     })
                     @@include('../form/filters.checkbox.html', {
-                        "name": "f13",
+                        "name": "f23",
                         "label": "Взрослые 18-47 лет",
                         "width": "100"
                     })
                     @@include('../form/filters.checkbox.html', {
-                        "name": "f14",
+                        "name": "f24",
                         "label": "Взрослые 48 +",
                         "width": "100"
                     })

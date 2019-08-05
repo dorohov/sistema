@@ -129,7 +129,7 @@
         </div>
         <div class="table-filters">
             <div class="table-filters__inner container">
-                <div class="directions-body__filters">
+                <div class="directions-body__filters is--m7n">
                     <div class="directions-body__filters__block">
                         <div class="filters-block">
                             <div class="filters-block__inner">
@@ -156,16 +156,30 @@
                                 </div>
                                 <div class="filters-block__heading pt-40">Тренер</div>
                                 <div class="filters-block__body">
-                                    <div class="filters-block__row is--w@@width">
+                                    <div class="filters-block__row">
                                         <div class="select">
                                             <div class="select__label">Не важно</div>
                                             <div class="select__dropdown">
                                                 <ul>
+
                                                     <li>Не важно</li>
+
                                                     <li>Мужчина</li>
+
                                                     <li>Женщина</li>
+
                                                 </ul>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    <div class="filters-block__row">
+                                        <div class="switcher">
+                                            <div class="switcher__input">
+                                                <input type="checkbox" id="sw1">
+                                                <label for="sw1"></label>
+                                            </div>
+                                            <div class="switcher__label"><label for="sw1">Без платных занятий</label></div>
                                         </div>
                                     </div>
                                 </div>
@@ -179,38 +193,38 @@
                                 <div class="filters-block__body">
                                     <div class="filters-block__row is--w100">
                                         <div class="checkbox is--default">
-                                            <input type="checkbox" id="f11">
-                                            <label for="f11" class="is--sq">
+                                            <input type="checkbox" id="f21">
+                                            <label for="f21" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f11" class="is--label">Дети до 3 лет</label>
+                                            <label for="f21" class="is--label">Дети до 3 лет</label>
                                         </div>
                                     </div>
                                     <div class="filters-block__row is--w100">
                                         <div class="checkbox is--default">
-                                            <input type="checkbox" id="f12">
-                                            <label for="f12" class="is--sq">
+                                            <input type="checkbox" id="f22">
+                                            <label for="f22" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f12" class="is--label">Подростки 14-17 лет</label>
+                                            <label for="f22" class="is--label">Подростки 14-17 лет</label>
                                         </div>
                                     </div>
                                     <div class="filters-block__row is--w100">
                                         <div class="checkbox is--default">
-                                            <input type="checkbox" id="f13">
-                                            <label for="f13" class="is--sq">
+                                            <input type="checkbox" id="f23">
+                                            <label for="f23" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f13" class="is--label">Взрослые 18-47 лет</label>
+                                            <label for="f23" class="is--label">Взрослые 18-47 лет</label>
                                         </div>
                                     </div>
                                     <div class="filters-block__row is--w100">
                                         <div class="checkbox is--default">
-                                            <input type="checkbox" id="f14">
-                                            <label for="f14" class="is--sq">
+                                            <input type="checkbox" id="f24">
+                                            <label for="f24" class="is--sq">
                                                 <span class="is--sq__inner"></span>
                                             </label>
-                                            <label for="f14" class="is--label">Взрослые 48 +</label>
+                                            <label for="f24" class="is--label">Взрослые 48 +</label>
                                         </div>
                                     </div>
                                 </div>
@@ -283,9 +297,979 @@
                 </div>
             </div>
         </div>
+        <div class="table">
+            <div class="table__inner container">
+                <div class="table__list">
+                    <div class="table__list__items">
+                        <!-- Column 1 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Пн, 03.06
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Stretching</div>
+                                        <div class="table__list__block__top__time">13:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--current">
+                                Вт, 04.06
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--green">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Ср, 05.06
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column 4 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Чт, 06.06
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--blue">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column 5 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Пт, 07.06
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                        </div>
+                        <!-- Column 6 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Сб, 08.06
+                            </div>
+                            <div class="table__list__block is--red">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column 7 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Вс, 09.06
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column 1 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Пн, 03.06
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Stretching</div>
+                                        <div class="table__list__block__top__time">13:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--current">
+                                Вт, 04.06
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--green">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column 3 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Ср, 05.06
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column 4 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Чт, 06.06
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--blue">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column 5 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Пт, 07.06
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                        </div>
+                        <!-- Column 6 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Сб, 08.06
+                            </div>
+                            <div class="table__list__block is--red">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column 7 -->
+                        <div class="table__list__col">
+                            <div class="table__list__block__date is--default">
+                                Вс, 09.06
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Air yoga</div>
+                                        <div class="table__list__block__top__time">10:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Татьяна Иванова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--empty"></div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Body sculpt</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Ольга Моисеева</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 1</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__list__block is--white">
+                                <div class="table__list__block__inner">
+                                    <div class="table__list__block__top">
+                                        <div class="table__list__block__top__title">Pilates</div>
+                                        <div class="table__list__block__top__time">11:00</div>
+                                    </div>
+                                    <div class="table__list__block__trainer">Наталья Петрова</div>
+                                    <div class="table__list__block__footer">
+                                        <div class="table__list__block__footer__left">Зал 2</div>
+
+                                        <div class="table__list__block__footer__right">
+                                            <span><svg class="svg-ruble-dims svg is--ruble">
+                                                    <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                                </svg></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <div class="footer">
-        <b style="color: #fff;">footer</b>
+        <div class="footer__inner container">
+            <div class="footer__top">
+                <div class="footer__top__block is--menu">
+                    <div class="footer__top__block__inner">
+                        <div class="footer__top__block__heading">Информация</div>
+                        <div class="footer__top__block__menu">
+                            <ul>
+                                <li class="is--item"><a href="about.html">О клубе</a></li>
+                                <li class="is--item"><a href="prices.html">Цены</a></li>
+                                <li class="is--item"><a href="table.html">Расписание</a></li>
+                                <li class="is--item"><a href="team.html">Команда</a></li>
+                                <li class="is--item"><a href="info.html">Полезная информация</a></li>
+                                <li class="is--item"><a href="blog.html">Блок</a></li>
+                                <li class="is--item"><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__top__block is--menu">
+                    <div class="footer__top__block__inner">
+                        <div class="footer__top__block__heading">Клубные карты</div>
+                        <div class="footer__top__block__menu">
+                            <ul>
+                                <li class="is--item"><a href="#modal_card-inf" rel="modal:open">Безлимитная</a></li>
+                                <li class="is--item"><a href="#modal_card-morn" rel="modal:open">Утренняя</a></li>
+                                <li class="is--item"><a href="#modal_card-wom" rel="modal:open">Женская</a></li>
+                                <li class="is--item"><a href="prices.html">Все виды карт</a></li>
+                                <li class="is--item-y"><a href="#modal_ice" rel="modal:open">Заморозить карту</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__top__block">
+                    <div class="footer__top__block__inner">
+                        <div class="footer__top__block__heading">Контакты</div>
+                        <div class="footer__top__block__menu">
+                            <ul>
+                                <li class="is--item"><a href="tel:84862445020">+7 (4862) 44-50-20</a></li>
+                                <li class="is--item"><span>ул.Тургенева,40,ТЦ «Водолей»</span></li>
+                                <li class="is--item"><a href="mailto:club@sistemaorel.ru">club@sistemaorel.ru</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__top__block is--quest">
+                    <form class="footer__top__block__inner">
+                        <div class="footer__top__block__heading">Задать вопрос</div>
+                        <div class="footer__top__block__search">
+                            <input type="text" placeholder="Введите Ваш вопрос">
+                            <button>
+                                <svg class="svg-footer_search-dims svg is--footer_search">
+                                    <use xlink:href="img/svg/sprites.svg#footer_search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="footer__top__block__soc">
+                            <!-- Сделать наведение -->
+                            <div class="social is--left is--white">
+                                <ul>
+                                    <li>
+                                        <a href="#">Vk</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">In</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Fb</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /Сделать наведение -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="Система Комплекс">
+                    </a>
+                </div>
+                <div class="footer__bottom__cop">
+                    &copy; «Система Комплекс». Все права защищены
+                </div>
+                <div class="footer__bottom__social">
+                    <!-- Сделать наведение -->
+                    <div class="social is--left is--white">
+                        <ul>
+                            <li>
+                                <a href="#">Vk</a>
+                            </li>
+                            <li>
+                                <a href="#">In</a>
+                            </li>
+                            <li>
+                                <a href="#">Fb</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /Сделать наведение -->
+                </div>
+                <div class="footer__bottom__dorohov">
+                    <a href="https://dorohovdesign.ru/" target="_blank">
+                        <div class="footer__bottom__dorohov__text">Дизайн <br> и разработка — </div>
+                        <div class="footer__bottom__dorohov__logo">
+                            <svg class="svg-dorohov-dims svg is--dorohov">
+                                <use xlink:href="img/svg/sprites.svg#dorohov"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- modals -->
     <div id="overlay"></div>
@@ -296,6 +1280,7 @@
     <script src="dist/js/TweenMax.min.js"></script>
     <script src="dist/js/cssanimation-gsap.min.js"></script>
     <script src="dist/js/swiper.min.js"></script>
+    <script src="dist/js/slick.min.js"></script>
     <script src="dist/js/main.js"></script>
     <script>
         svg4everybody()

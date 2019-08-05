@@ -1,11 +1,11 @@
-<div class="filters-block__row is--w@@width">
+<div class="filters-block__row">
     <div class="select">
         <div class="select__label">Не важно</div>
         <div class="select__dropdown">
             <ul>
-                <li>Не важно</li>
-                <li>Мужчина</li>
-                <li>Женщина</li>
+                @@for(var i = 0; i < list.length; i++) {
+                    <li>`+list[i].label+`</li>
+                }
             </ul>
         </div>
     </div>

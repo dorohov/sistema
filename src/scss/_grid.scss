@@ -46,6 +46,15 @@
             }
         }
     }
+    &.is--white {
+        ul {
+            li {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
     &.is--primary {
         ul {
             li {

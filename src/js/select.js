@@ -22,9 +22,24 @@
             }
         }
 
+        $(document).on('click', function(e) {
+            var targets = $(e.target).closest('.select')
+            if(targets.length <= 0) closeDropdown()
+        })
+
+        function selectItem(item) {
+            alert('Вы выбрали: ' + item)
+            closeDropdown()
+        }
+
         $('.select__label').on('click', function() {
             var thisContainer = $(this).parent('.select')
             toggleDropdown(thisContainer)
+        })
+
+        $('.select__dropdown ul li').on('click', function() {
+            var thisText = $(this).html()
+            selectItem(thisText)
         })
 
     })

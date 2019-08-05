@@ -1,5 +1,91 @@
 <div class="footer">
-    <b style="color: #fff;">footer</b>
+    <div class="footer__inner container">
+        <div class="footer__top">
+            <div class="footer__top__block is--menu">
+                <div class="footer__top__block__inner">
+                    <div class="footer__top__block__heading">Информация</div>
+                    <div class="footer__top__block__menu">
+                        <ul>
+                            <li class="is--item"><a href="@@pages.about">О клубе</a></li>
+                            <li class="is--item"><a href="@@pages.prices">Цены</a></li>
+                            <li class="is--item"><a href="@@pages.table">Расписание</a></li>
+                            <li class="is--item"><a href="@@pages.team">Команда</a></li>
+                            <li class="is--item"><a href="@@pages.info">Полезная информация</a></li>
+                            <li class="is--item"><a href="@@pages.blog">Блок</a></li>
+                            <li class="is--item"><a href="@@pages.contacts">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__top__block is--menu">
+                <div class="footer__top__block__inner">
+                    <div class="footer__top__block__heading">Клубные карты</div>
+                    <div class="footer__top__block__menu">
+                        <ul>
+                            <li class="is--item"><a href="#modal_card-inf" rel="modal:open">Безлимитная</a></li>
+                            <li class="is--item"><a href="#modal_card-morn" rel="modal:open">Утренняя</a></li>
+                            <li class="is--item"><a href="#modal_card-wom" rel="modal:open">Женская</a></li>
+                            <li class="is--item"><a href="@@pages.prices">Все виды карт</a></li>
+                            <li class="is--item-y"><a href="#modal_ice" rel="modal:open">Заморозить карту</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__top__block">
+                <div class="footer__top__block__inner">
+                    <div class="footer__top__block__heading">Контакты</div>
+                    <div class="footer__top__block__menu">
+                        <ul>
+                            <li class="is--item"><a href="@@phone_link">@@phone</a></li>
+                            <li class="is--item"><span>ул.Тургенева,40,ТЦ «Водолей»</span></li>
+                            <li class="is--item"><a href="mailto:@@mail">@@mail</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__top__block is--quest">
+                <form class="footer__top__block__inner">
+                    <div class="footer__top__block__heading">Задать вопрос</div>
+                    <div class="footer__top__block__search">
+                        <input type="text" placeholder="Введите Ваш вопрос">
+                        <button>
+                            @@include('../components/component.svg.html', {"name": "footer_search"})
+                        </button>
+                    </div>
+                    <div class="footer__top__block__soc">
+                        @@include('component.social.html', {
+                            "align": "left",
+                            "color": "white"
+                        })
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom__logo">
+                <a href="@@pages.index">
+                    <img src="img/logo.svg" alt="@@sitename">
+                </a>
+            </div>
+            <div class="footer__bottom__cop">
+                &copy; «Система Комплекс». Все права защищены
+            </div>
+            <div class="footer__bottom__social">
+                @@include('component.social.html', {
+                    "align": "left",
+                    "color": "white"
+                })
+            </div>
+            <div class="footer__bottom__dorohov">
+                <a href="https://dorohovdesign.ru/" target="_blank">
+                    <div class="footer__bottom__dorohov__text">Дизайн <br> и разработка — </div>
+                    <div class="footer__bottom__dorohov__logo">
+                        @@include('../components/component.svg.html', {"name": "dorohov"})
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 @@include('../modals/modal.index.html')
 <div id="overlay"></div>

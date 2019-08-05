@@ -1,0 +1,17 @@
+<div class="table__list__block is--@@type">
+    <div class="table__list__block__inner">
+        <div class="table__list__block__top">
+            <div class="table__list__block__top__title">@@title</div>
+            <div class="table__list__block__top__time">@@time</div>
+        </div>
+        <div class="table__list__block__trainer">@@trainer</div>
+        <div class="table__list__block__footer">
+            <div class="table__list__block__footer__left">@@hall</div>
+            @@if(rub == 'true') {
+                <div class="table__list__block__footer__right">
+                    <span>@@include('../components/component.svg.html', {"name": "ruble"})</span>
+                </div>
+            }
+        </div>
+    </div>
+</div>
