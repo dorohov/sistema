@@ -1,0 +1,121 @@
+<div class="directions-body__filters is--tf is--m7n">
+    <div class="directions-body__filters__block is--tf1">
+        <div class="filters-block">
+            <div class="filters-block__inner">
+                <div class="filters-block__heading">Возраст</div>
+                <div class="filters-block__body">
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f11",
+                        "label": "Дети до 3 лет",
+                        "width": "100"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f12",
+                        "label": "Подростки 14-17 лет",
+                        "width": "100"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f13",
+                        "label": "Взрослые 18-47 лет",
+                        "width": "100"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f14",
+                        "label": "Взрослые 48 +",
+                        "width": "100"
+                    })
+                </div>
+                <div class="filters-block__heading pt-40">Выбрать пол</div>
+                <div class="filters-block__body">
+                    @@include('../form/filters.select.html', {
+                        "label": "Не важно",
+                        "list": [
+                            {
+                                "label": "Не важно"
+                            },
+                            {
+                                "label": "Мужчина"
+                            },
+                            {
+                                "label": "Женщина"
+                            }
+                        ]
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="directions-body__filters__block is--tf2 is--tw">
+        <div class="filters-block">
+            <div class="filters-block__inner">
+                <div class="filters-block__heading">Направление</div>
+                <div class="filters-block__body">
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f21",
+                        "label": "Тренажерный зал",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f22",
+                        "label": "Массаж",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f23",
+                        "label": "Групповые программы",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f24",
+                        "label": "Аппаратная косметология",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f25",
+                        "label": "Секции единоборств",
+                        "width": "50"
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="directions-body__filters__block is--tf3 is--tw">
+        <div class="filters-block">
+            <div class="filters-block__inner">
+                <div class="filters-block__heading">Цель</div>
+                <div class="filters-block__body">
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f31",
+                        "label": "Накачать мышцы",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f32",
+                        "label": "Гибкость",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f33",
+                        "label": "Сбросить лишний вес",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f34",
+                        "label": "Улучшить физическую форму",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f35",
+                        "label": "Выносливость",
+                        "width": "50"
+                    })
+                    @@include('../form/filters.checkbox.html', {
+                        "name": "f36",
+                        "label": "Научиться танцевать",
+                        "width": "50"
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

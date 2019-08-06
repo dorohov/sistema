@@ -2,13 +2,34 @@ $t-green: #99DDCC;
 $t-blue: #BAD7DF;
 $t-red: #FFE2E2;
 
+@mixin rubleLabel() {
+    background: #E31D1D;
+    width: 36px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    svg {
+        fill: #fff;
+    }
+}
+
 .table {
     background: #F5F5F5;
     padding: 60px 0 50px 0;
+    &__inner {
+        max-width: #{1480px + 200px};
+        padding-right: 100px;
+        padding-left: 100px;
+        position: relative;
+    }
     &-filters {
         padding: 65px 0 70px 0;
     }
     &__list {
+        margin-bottom: 90px;
+        cursor: grab;
         &__items {
             margin: 0 -12px;
             display: flex;
@@ -78,16 +99,7 @@ $t-red: #FFE2E2;
                 }
                 &__right {
                     span {
-                        background: #E31D1D;
-                        width: 36px;
-                        height: 20px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 10px;
-                        svg {
-                            fill: #fff;
-                        }
+                        @include rubleLabel();
                     }
                 }
             }
@@ -108,7 +120,147 @@ $t-red: #FFE2E2;
             }
             &.is--empty {
                 background: #EEEDED;
-                cursor: default;
+                cursor: grab;
+            }
+        }
+    }
+    &__controls {
+        display: none;
+        button {
+            position: absolute;
+            top: 25px;
+            padding: 0;
+            border: none;
+            background: transparent;
+            outline: none;
+            cursor: pointer;
+            &.is--prev {
+                left: 50px;
+                transform: rotate(180deg);
+            }
+            &.is--next {
+                right: 50px;
+            }
+        }
+    }
+    &__footer {
+        &__top,
+        &__bottom {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__top {
+            margin-bottom: 35px;
+            &__block {
+                margin-right: 60px;
+                &__inner {
+                    display: flex;
+                    align-items: center;
+                }
+                &__left {
+                    margin-right: 8px;
+                    span {
+                        &.is--red,
+                        &.is--blue,
+                        &.is--green {
+                            display: block;
+                            width: 32px;
+                            height: 23px;
+                            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.098);
+                        }
+                        &.is--red {
+                            background: $t-red;
+                        }
+                        &.is--blue {
+                            background: $t-blue;
+                        }
+                        &.is--green {
+                            background: $t-green;
+                        }
+                        &.is--ruble {
+                            @include rubleLabel();
+                        }
+                    }
+                }
+                &__right {
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .table {
+        &__list {
+            &__col {
+                padding: 0 9px;
+            }
+        }
+        &__controls {
+            display: block;
+            button {
+                &.is--prev {
+                    left: 40px;
+                }
+                &.is--next {
+                    right: 40px;
+                }
+            }
+        }
+        &__footer {
+            display: flex;
+            align-items: center;
+            &__top {
+                margin-bottom: 0;
+                &__block {
+                    margin-right: 40px;
+                }
+            }
+            &__bottom {
+                .table__footer__top__block {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .table {
+        &__footer {
+            flex-wrap: wrap;
+            &__top,
+            &__bottom {
+                width: 100%;
+            }
+            &__top {
+                flex-wrap: wrap;
+                &__block {
+                    width: 100%;
+                    margin: 0 0 20px 0 !important;
+                }
+            }
+            &__bottom {
+                .table__footer__top__block {
+                    margin-bottom: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .table {
+        &__inner {
+            max-width: #{1480px + 60px};
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        &__controls {
+            button {
+                top: -40px;
             }
         }
     }

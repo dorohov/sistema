@@ -10,12 +10,55 @@
                 @@include('table.list.col6.html')
                 @@include('table.list.col7.html')
                 @@include('table.list.col1.html')
-                @@include('table.list.col2.html')
                 @@include('table.list.col3.html')
                 @@include('table.list.col4.html')
                 @@include('table.list.col5.html')
-                @@include('table.list.col6.html')
-                @@include('table.list.col7.html')
+            </div>
+        </div>
+        <div class="table__controls">
+            <button class="is--prev">
+                <img src="img/table_arrow.svg" alt="">
+            </button>
+            <button class="is--next">
+                <img src="img/table_arrow.svg" alt="">
+            </button>
+        </div>
+        <div class="table__footer">
+            <div class="table__footer__top">
+                <div class="table__footer__top__block">
+                    <div class="table__footer__top__block__inner">
+                        <div class="table__footer__top__block__left">
+                            <span class="is--red"></span>
+                        </div>
+                        <div class="table__footer__top__block__right">— Отмена</div>
+                    </div>
+                </div>
+                <div class="table__footer__top__block">
+                    <div class="table__footer__top__block__inner">
+                        <div class="table__footer__top__block__left">
+                            <span class="is--blue"></span>
+                        </div>
+                        <div class="table__footer__top__block__right">— Замена</div>
+                    </div>
+                </div>
+                <div class="table__footer__top__block">
+                    <div class="table__footer__top__block__inner">
+                        <div class="table__footer__top__block__left">
+                            <span class="is--green"></span>
+                        </div>
+                        <div class="table__footer__top__block__right">— Идет набор</div>
+                    </div>
+                </div>
+            </div>
+            <div class="table__footer__bottom">
+                <div class="table__footer__top__block">
+                    <div class="table__footer__top__block__inner">
+                        <div class="table__footer__top__block__left">
+                            <span class="is--ruble">@@include('../components/component.svg.html', {"name": "ruble"})</span>
+                        </div>
+                        <div class="table__footer__top__block__right">— Платная секция</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

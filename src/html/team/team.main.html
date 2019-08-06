@@ -1,0 +1,61 @@
+@@include('../simple/simple.heading.html', {
+    "sub": "Наша",
+    "title": "Команда",
+    "mode": "search",
+    "breadcrumbs": "Команда"
+})
+<div class="team-filters">
+    <div class="team-filters__inner container">
+        @@include('team.filters.html')
+    </div>
+</div>
+<div class="team-wrap">
+    <div class="team-wrap__inner container">
+        <div class="team-list">
+            <div class="team-list__inner">
+                @@include('team.block.html', {
+                    "title": "Мастер <br> тренер",
+                    "name": "Анна <br> Каренина",
+                    "alt": "Анна Каренина",
+                    "photo": "trainer1.png"
+                })
+                @@include('team.block.html', {
+                    "title": "Персональный <br> тренер",
+                    "name": "Глеб <br> Жиглов",
+                    "alt": "Глеб Жиглов",
+                    "photo": "trainer2.png"
+                })
+                @@include('team.block.html', {
+                    "title": "Мастер <br> тренер",
+                    "name": "Ольга <br> Ильинская",
+                    "alt": "Ольга Ильинская",
+                    "photo": "trainer3.png"
+                })
+                @@include('team.block.html', {
+                    "title": "Персональный <br> тренер",
+                    "name": "Артем <br> Сорокин",
+                    "alt": "Артем Сорокин",
+                    "photo": "trainer4.png"
+                })
+                @@include('team.block.html', {
+                    "title": "Мастер <br> тренер",
+                    "name": "Иван <br> Иванов",
+                    "alt": "Иван Иванов",
+                    "photo": "trainer5.png"
+                })
+                @@include('team.block.html', {
+                    "title": "Фитнес- <br> инструктор",
+                    "name": "Наталья <br> Ростова",
+                    "alt": "Наталья Ростова",
+                    "photo": "trainer6.png"
+                })
+            </div>
+        </div>
+        <div class="directions-body__load">
+            <button>
+                @@include('../components/component.svg.html', {"name": "reload"})
+                загрузить еще
+            </button>
+        </div>
+    </div>
+</div>
