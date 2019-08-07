@@ -1,0 +1,54 @@
+<div class="contacts">
+    <div class="contacts__inner">
+        <div class="contacts__left">
+            <div class="contacts__left__top">
+                <div class="contacts__left__top__inner is--c-pl">
+                    @@include('../components/component.breadcrumbs.html', {
+                        "list": [
+                            {
+                                "title": "Главная",
+                                "url": "@@pages.index"
+                            }
+                        ],
+                        "current": "Контакты"
+                    })
+                    <div class="heading is--black">
+                        <div class="heading__sub">Контакты</div>
+                        <div class="heading__title"><span>Клуба</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__left__bottom">
+                <div class="contacts__left__bottom__inner is--c-pl">
+                    <div class="contacts__left__bottom__block">
+                        <div class="contacts__left__bottom__block__inner">
+                            <div class="contacts__left__bottom__block__title">Адрес</div>
+                            <div class="contacts__left__bottom__block__desc"><span>г. Орёл, ул. Тургенева, 40, <br> ТЦ «Водолей»</span></div>
+                        </div>
+                    </div>
+                    <div class="contacts__left__bottom__block">
+                        <div class="contacts__left__bottom__block__inner">
+                            <div class="contacts__left__bottom__block__title">Почта</div>
+                            <div class="contacts__left__bottom__block__desc"><a href="mailto:@@mail">@@mail</a></div>
+                        </div>
+                    </div>
+                    <div class="contacts__left__bottom__block">
+                        <div class="contacts__left__bottom__block__inner">
+                            <div class="contacts__left__bottom__block__title">Телефон</div>
+                            <div class="contacts__left__bottom__block__desc"><a href="@@phone_link">@@phone</a></div>
+                        </div>
+                    </div>
+                    <div class="contacts__left__bottom__block">
+                        <div class="contacts__left__bottom__block__inner">
+                            <div class="contacts__left__bottom__block__title">Режим работы</div>
+                            <div class="contacts__left__bottom__block__desc"><span>Пн — Вс 7:00 - 24:00</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts__right is--h100">
+            <div id="map"></div>
+        </div>
+    </div>
+</div>

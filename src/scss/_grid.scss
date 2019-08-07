@@ -89,6 +89,13 @@
             z-index: 9;
         }
     }
+    &__subtitle {
+        font-size: 16px;
+        line-height: 115%;
+        letter-spacing: 0.035em;
+        color: #FFFFFF;
+        padding-top: 20px;
+    }
     &.is--black {
         color: #181818;
     }

@@ -6,6 +6,32 @@
 })
 <div class="prices">
     <div class="prices__inner container">
-        
+        <div class="prices__list">
+            @@include('prices.block.html', {
+                "title": "Безлимитная <br> карта",
+                "desc": "Возможность посещать <br> клуб в любое время <br> в любые дни."
+            })
+            @@include('prices.block.html', {
+                "title": "Утренняя <br> карта",
+                "desc": "Тренировки в клубе <br> в любые дни с 7:00 <br> до 14:00"
+            })
+            @@include('prices.block.html', {
+                "title": "Вечерняя <br> карта",
+                "desc": "Тренировки в клубе <br> в любые дни с 19:00 <br> до 24:00"
+            })
+            @@include('prices.block.html', {
+                "title": "Твоя карта",
+                "desc": "Возможность посещать <br> клуб в любое время c 07:00 <br> до 24:00 в течение 1 года <br> до окончания посещений"
+            })
+            @@include('prices.block.html', {
+                "title": "Система +",
+                "desc": "Возможность посещения <br> клуба по очереди двумя <br> клиентами с 7:00 до 24:00"
+            })
+            @@include('prices.block.html', {
+                "title": "VIP карта",
+                "desc": "Возможность посещать <br> клуб в любые дни <br> с 7:00 до 24:00"
+            })
+        </div>
     </div>
 </div>
+@@include('../simple/simple.action.marathon.html')
