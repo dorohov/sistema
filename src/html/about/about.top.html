@@ -1,5 +1,39 @@
 <div class="about-top">
-    <div class="about-top__inner container">
-        asd
+    <div class="about-top__inner is--c-pl">
+        <div class="about-top__left">
+            @@include('../components/component.breadcrumbs.html', {
+                "list": [
+                    {
+                        "title": "Главная",
+                        "url": "@@pages.index"
+                    }
+                ],
+                "current": "О клубе"
+            })
+            <div class="heading is--black">
+                <div class="heading__sub">О клубе</div>
+                <div class="heading__title"><span>Система Комплекс</span></div>
+            </div>
+            <div class="about-top__content article">
+                <p>Система — это множество элементов, взаимодействующих друг <br>
+                с другом, образующих целостность и единство. Название нашего <br>
+                клуба выбрано не случайно, ведь именно слово «система» четко <br>
+                описывает наше видение современной фитнес индустрии.</p>
+                <p>Наш клуб - ведущая компания на рынке фитнес услуг города Орла. <br>
+                Расположен в самом центре города, в шаговой и транспортной <br>
+                доступности, в ТЦ «Водолей» на 3 этаже.</p>
+            </div>
+            <div class="about-top__btn">
+                <a href="#" class="btn"><span>Заказать карту</span></a>
+            </div>
+        </div>
+        <div class="about-top__right">
+            <img src="img/about_top.png" alt="О клубе Система Комплекс">
+            <div class="about-top__right__circles">
+                <div class="about-top__circles__block is--on"></div>
+                <div class="about-top__circles__block is--tw"></div>
+                <div class="about-top__circles__block is--th"></div>
+            </div>
+        </div>
     </div>
 </div>

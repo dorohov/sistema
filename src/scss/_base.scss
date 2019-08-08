@@ -86,5 +86,89 @@ h6 {
     padding-top: 40px;
 }
 
+.article {
+    p {
+        margin: 0 0 20px 0;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 106.5%;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    ul,
+    ol {
+        margin: 0 0 20px 0;
+        li {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 106.5%;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    ol {
+        padding-left: 20px;
+        li {
+            color: $c-primary;
+            font-weight: 900;
+            span {
+                color: #272727;
+                font-weight: 300;
+            }
+        }
+    }
+    ul {
+        li {
+            padding-left: 23px;
+            position: relative;
+            &::before {
+                content: '';
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 2px;
+                left: 0;
+                background: $c-primary;
+            }
+        }
+    }
+}
+
 ::-moz-selection { background: $c-primary; }
 ::selection { background: $c-primary; }
+
+@media (max-width: 1200px) {
+    .article {
+        p,
+        ul,
+        ol {
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .article {
+        p,
+        ul li,
+        ol li {
+            font-size: 16px;
+        }
+        ul {
+            li {
+                &::before {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}

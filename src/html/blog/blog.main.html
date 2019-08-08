@@ -1,0 +1,55 @@
+@@include('../simple/simple.heading.html', {
+    "sub": "Наш",
+    "title": "Блог",
+    "mode": "empty",
+    "breadcrumbs": "Блог"
+})
+<div class="blog">
+    <div class="blog__inner container">
+        <div class="blog__list">
+            @@include('blog.block.html', {
+                "img": "blog1.jpg",
+                "date": "Август 09, 2018",
+                "title": "Новый урок Air Yoga",
+                "link": "@@pages.article",
+                "bg": "ff"
+            })
+            @@include('blog.block.html', {
+                "img": "blog2.jpg",
+                "date": "Сентябрь 09, 2018",
+                "title": "Подарочные сертификаты для всех видов занятий!",
+                "link": "@@pages.article.text",
+                "bg": "ff"
+            })
+            @@include('blog.block.html', {
+                "img": "blog3.jpg",
+                "date": "Декабрь 09, 2018",
+                "title": "Новый урок Pilates Ball",
+                "link": "@@pages.article.onimg",
+                "bg": "ff"
+            })
+            @@include('blog.block.html', {
+                "img": "blog4.jpg",
+                "date": "Август 09, 2018",
+                "title": "Конвенция Fitness Factory",
+                "link": "@@pages.article",
+                "bg": "ff"
+            })
+            @@include('blog.block.html', {
+                "img": "blog5.jpg",
+                "date": "Сентябрь 09, 2018",
+                "title": "Мастер класс Адама",
+                "link": "@@pages.article",
+                "bg": "ff"
+            })
+            @@include('blog.block.html', {
+                "img": "blog6.jpg",
+                "date": "Декабрь 09, 2018",
+                "title": "Новый урок Body Pump",
+                "link": "@@pages.article",
+                "bg": "ff"
+            })
+        </div>
+        @@include('../simple/simple.load-btn.html')
+    </div>
+</div>

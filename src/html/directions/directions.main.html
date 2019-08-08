@@ -8,11 +8,6 @@
     <div class="directions-body__inner container">
         @@include('directions.filters.html')
         @@include('directions.list.html')
-        <div class="directions-body__load">
-            <button>
-                @@include('../components/component.svg.html', {"name": "reload"})
-                загрузить еще
-            </button>
-        </div>
+        @@include('../simple/simple.load-btn.html')
     </div>
 </div>

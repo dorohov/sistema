@@ -296,11 +296,11 @@
                         <div class="footer__top__block__heading">Клубные карты</div>
                         <div class="footer__top__block__menu">
                             <ul>
-                                <li class="is--item"><a href="#modal_card-inf" rel="modal:open">Безлимитная</a></li>
-                                <li class="is--item"><a href="#modal_card-morn" rel="modal:open">Утренняя</a></li>
-                                <li class="is--item"><a href="#modal_card-wom" rel="modal:open">Женская</a></li>
+                                <li class="is--item"><a href="#modal_card-inf" class="modal-open">Безлимитная</a></li>
+                                <li class="is--item"><a href="#modal_card-morn" class="modal-open">Утренняя</a></li>
+                                <li class="is--item"><a href="#modal_card-wom" class="modal-open">Женская</a></li>
                                 <li class="is--item"><a href="prices.html">Все виды карт</a></li>
-                                <li class="is--item-y"><a href="#modal_ice" rel="modal:open">Заморозить карту</a></li>
+                                <li class="is--item-y"><a href="#modal_ice" class="modal-open">Заморозить карту</a></li>
                             </ul>
                         </div>
                     </div>
@@ -383,7 +383,43 @@
             </div>
         </div>
     </div>
-    <!-- modals -->
+    <div id="modal_ice" class="modal">
+        <a href="#" rel="modal:close" class="modal__close">
+            <img src="img/modal_close.svg" alt="">
+        </a>
+        <div class="modal__inner is--ice">
+            <div class="modal__heading">
+                <span>Заморозить <br> карту</span>
+            </div>
+            <div class="modal__sub">Срок вашей заморозки вы можете узнать у Вашего персонального менеджера <br>
+                по телефону 44-50-20, или оставить заявку на уточнение.
+            </div>
+            <form class="modal__form">
+                <div class="modal__form__fields is--th">
+                    <div class="modal__form__block">
+                        <input type="text" placeholder="ФИО">
+                        <span class="is--line"></span>
+                    </div>
+                    <div class="modal__form__block">
+                        <input type="text" placeholder="Номер абонемента">
+                        <span class="is--line"></span>
+                    </div>
+                    <div class="modal__form__block">
+                        <input type="text" placeholder="Срок заморозки">
+                        <span class="is--line"></span>
+                    </div>
+                </div>
+                <div class="modal__form__footer">
+                    <div class="modal__form__footer__left">
+                        <button class="btn" type="submit">
+                            <span>Отправить</span>
+                        </button>
+                    </div>
+                    <div class="modal__form__footer__right"></div>
+                </div>
+            </form>
+        </div>
+    </div>
     <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <script src="dist/js/svg4everybody.min.js"></script>
@@ -393,6 +429,7 @@
     <script src="dist/js/cssanimation-gsap.min.js"></script>
     <script src="dist/js/swiper.min.js"></script>
     <script src="dist/js/slick.min.js"></script>
+    <script src="dist/js/jquery.modal.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=c0ad8e19-2fef-43ae-80c9-7a01e5ed4e24&lang=ru_RU" type="text/javascript"></script>
     <script src="dist/js/main.js"></script>
     <script>

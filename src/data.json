@@ -20,6 +20,8 @@
         "about": "about.html",
         "blog": "blog.html",
         "article": "article.html",
+        "article.text": "article.text.html",
+        "article.onimg": "article.onimg.html",
         "info": "info.html",
         "info.item": "info.item.html"
     }

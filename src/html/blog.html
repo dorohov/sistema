@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="@@lang">
+<head>
+    @@include('components/component.head.html', {"title": "Блог"})
+</head>
+<body class="is--pt">
+    @@include('components/component.navbar.html', {
+        "type": "default"
+    })
+    <main>
+        @@include('blog/blog.main.html')
+    </main>
+    @@include('components/component.footer.html')
+</body>
+</html>

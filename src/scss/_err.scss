@@ -1,0 +1,110 @@
+.err {
+    overflow: hidden;
+    padding: 80px 0 100px 0;
+    &__inner {
+        display: flex;
+        align-items: center;
+        max-width: #{1210px + 60px};
+    }
+    &__left {
+        min-width: 305px;
+        &__heading {
+            margin-bottom: 90px;
+            &__sub {
+                @include fontItalic();
+                font-size: 64px;
+                line-height: 91.5%;
+            }
+            &__title {
+                font-size: 217px;
+                line-height: 91.5%;
+                text-transform: uppercase;
+                @include fontBold();
+                margin-bottom: 40px;
+            }
+            &__subtitle {
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 105.5%;
+            }
+        }
+    }
+    &__right {
+        position: relative;
+        margin-left: auto;
+        max-width: 765px;
+        img {
+            z-index: 999;
+            position: relative;
+        }
+    }
+    &__circles {
+        &__block {
+            border: 1px solid rgba(#000, 0.15);
+            border-radius: 100%;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            &.is--on {
+                width: 52vw;
+                height: 52vw;
+                animation: pulse 2.7s infinite;
+            }
+            &.is--tw {
+                width: 35vw;
+                height: 35vw;
+                animation: pulse1 2.7s infinite;
+            }
+            &.is--th {
+                width: 24vw;
+                height: 24vw;
+                border: none;
+                @include primaryGradient();
+                animation: pulse2 2.7s infinite;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .err {
+        &__left {
+            &__heading {
+                margin-bottom: 50px;
+                &__title {
+                    font-size: 140px;
+                    margin-bottom: 20px;
+                }
+                &__sub {
+                    font-size: 44px;
+                }
+            }
+        }
+        &__right {
+            max-width: 360px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .err {
+        padding: 50px 0;
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__left {
+            min-width: 0;
+            &__heading {
+                &__title {
+                    font-size: 90px;
+                }
+            }
+        }
+        &__right {
+            display: none;
+        }
+    }
+}

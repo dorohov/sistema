@@ -1,7 +1,101 @@
 .about {
     &-top {
         &__inner {
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+        &__left {
+            padding: 50px 30px 100px 0;
+            max-width: 630px;
+            min-width: 630px;
+            width: 630px;
+        }
+        &__right {
+            max-width: 1030px;
+            width: 100%;
+            padding-right: 30px;
+            position: relative;
+            img {
+                width: 100%;
+                position: relative;
+                z-index: 999;
+            }
+        }
+        &__circles {
+            &__block {
+                border: 1px solid rgba(#000, 0.15);
+                border-radius: 100%;
+                margin: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 100;
+                &.is--on {
+                    width: 52vw;
+                    height: 52vw;
+                    animation: pulse 2.7s infinite;
+                }
+                &.is--tw {
+                    width: 35vw;
+                    height: 35vw;
+                    animation: pulse1 2.7s infinite;
+                }
+                &.is--th {
+                    width: 24vw;
+                    height: 24vw;
+                    border: none;
+                    @include primaryGradient();
+                    animation: pulse2 2.7s infinite;
+                }
+            }
+        }
+        &__content {
+            margin-bottom: 50px;
+        }
+    }
+}
 
+@media (max-width: 1440px) {
+    .about {
+        &-top {
+            &__left {
+                max-width: 540px;
+                width: 540px;
+                min-width: 540px;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .about {
+        &-top {
+            &__inner {
+                padding-right: 30px;
+            }
+            &__left {
+                max-width: 100%;
+                min-width: 0;
+                width: 100%;
+            }
+            &__right {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        &-top {
+            &__left {
+                padding-bottom: 50px;
+            }
         }
     }
 }

@@ -69,7 +69,6 @@
 .heading {
     margin-bottom: 45px;
     position: relative;
-    overflow: hidden;
     &__sub {
         @include fontItalic();
         font-size: 72px;
@@ -121,6 +120,7 @@
         }
     }
     &.is--arrow {
+        overflow: hidden;
         &.is--black {
             .heading {
                 &__title {
@@ -156,6 +156,8 @@
     padding: 25px 60px;
     background: $c-primary;
     position: relative;
+    border: none;
+    cursor: pointer;
     &:hover {
         &::before {
             height: 100%;
