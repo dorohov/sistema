@@ -1,26 +1,21 @@
-<div id="modal_ice" class="modal">
+<div id="modal_form" class="modal">
 <a href="#" rel="modal:close" class="modal__close">
     <img src="img/modal_close.svg" alt="">
 </a>
   <div class="modal__inner is--ice">
     <div class="modal__heading">
-        <span>Заморозить <br> карту</span>
+        <span>Записаться <br> на занятие</span>
     </div>
-    <div class="modal__sub">Срок вашей заморозки вы можете узнать у Вашего персонального менеджера <br>
-        по телефону 44-50-20, или оставить заявку на уточнение.
+    <div class="modal__sub">В ближайшее время с Вами свяжется <br> менеджер
     </div>
     <form class="modal__form">
-        <div class="modal__form__fields is--th">
+        <div class="modal__form__fields is--fv">
             <div class="modal__form__block">
-                <input type="text" placeholder="ФИО">
+                <input type="text" placeholder="Имя" required>
                 <span class="is--line"></span>
             </div>
             <div class="modal__form__block">
-                <input type="text" placeholder="Номер абонемента">
-                <span class="is--line"></span>
-            </div>
-            <div class="modal__form__block">
-                <input type="text" placeholder="Срок заморозки">
+                <input type="text" placeholder="Телефон" required class="input-phone">
                 <span class="is--line"></span>
             </div>
         </div>

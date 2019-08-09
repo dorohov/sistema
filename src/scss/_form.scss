@@ -186,6 +186,29 @@ input[type="email"] {
     }
 }
 
+.parsley-errors-list.filled {
+    position: absolute;
+    background: $c-primary;
+    top: calc(100% + 10px);
+    left: 15px;
+    padding: 8px 15px;
+    font-size: 14px;
+    &::after {
+        bottom: 100%;
+        left: 15px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: $c-primary;
+        border-width: 6px;
+        margin-left: -6px;
+    }
+}
+
 @media (max-width: 768px) {
     input[type="text"],
     input[type="password"],

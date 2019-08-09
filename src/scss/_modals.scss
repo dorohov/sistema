@@ -38,10 +38,24 @@
     background: #f7f7f7;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     text-align: left;
+    &.is--trainer,
+    &.is--card,
+    &.is--app {
+        max-width: 1480px;
+    }
     &__close {
         position: absolute;
         right: 30px;
         top: 30px;
+        z-index: 10;
+        img {
+            transition: .4s all ease;
+        }
+        &:hover {
+            img {
+                transform: rotate(-360deg);
+            }
+        }
     }
     &__heading {
         margin-bottom: 80px;
@@ -132,26 +146,258 @@
     }
 }
 
-
-// 
-
-/*
-*
-*   Модалки:
-*       - Заморозить карту []
-*       - Занятие из расписания []
-*       - Тренер из нашей команды []
-*       - Форма записи к тренеру []
-*       - Сообщение об успешной отправки []
-*       - Карта клуба []
-*       - Тренажер []
-*   
-*/
-
 .modal {
     &__inner {
         &.is--ice {
             padding: 110px 150px 135px 150px;
+        }
+        &.is--success {
+            padding: 100px 150px;
+        }
+        &.is--trainer {
+            display: flex;
+            padding: 120px 170px 0 170px;
+            align-items: flex-end;
+            &.is--xs {
+                padding-top: 60px;
+            }
+            .modal {
+                &__left {
+                    margin-right: 110px;
+                    width: 440px;
+                    min-width: 440px;
+                }
+                &__right {
+                    width: 100%;
+                    padding-bottom: 150px;
+                    &.is--xs {
+                        padding-bottom: 90px;
+                    }
+                    &__top {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        margin-bottom: 90px;
+                        &.is--xs {
+                            margin-bottom: 55px;
+                            .modal {
+                                &__right {
+                                    &__top {
+                                        &__left {
+                                            span {
+                                                font-size: 72px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &__left {
+                            span {
+                                font-size: 96px;
+                                line-height: 79.5%;
+                                color: #181818;
+                                transform: rotate(-7.42deg);
+                                display: block;
+                                @include fontItalic();
+                            }
+                        }
+                        &__right {
+                            font-size: 18px;
+                            font-weight: 600;
+                            display: flex;
+                            align-items: flex-end;
+                            span {
+                                display: block;
+                                margin-left: 10px;
+                                font-weight: 300;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    &__main {
+                        margin-bottom: 100px;
+                        &.is--xs {
+                            margin-bottom: 70px;
+                        }
+                        &__bname {
+                            font-size: 72px;
+                            line-height: 91.5%;
+                            font-weight: 600;
+                            margin-bottom: 70px;
+                        }
+                        &__name {
+                            font-size: 24px;
+                            font-weight: 300;
+                            margin-bottom: 35px;
+                            span {
+                                font-weight: 600;
+                            }
+                        }
+                        &__desc {
+                            margin-bottom: 60px;
+                            &.is--nm {
+                                margin-bottom: 0;
+                            }
+                            p {
+                                margin: 0 0 20px 0;
+                                font-weight: 300;
+                                font-size: 18px;
+                                line-height: 117%;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                        &__sp {
+                            margin-bottom: 45px;
+                            &__sub {
+                                font-weight: 300;
+                                font-size: 16px;
+                                margin-bottom: 15px;
+                            }
+                            &__title {
+                                font-weight: 600;
+                                font-size: 18px;
+                            }
+                        }
+                        &__footer {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            &__left {
+                                font-weight: 300;
+                                font-size: 18px;
+                                span {
+                                    font-weight: 600;
+                                }
+                            }
+                            &__right {
+                                font-weight: 600;
+                                font-size: 18px;
+                                color: #E31D1D;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.is--card {
+            display: flex;
+            align-items: center;
+            padding: 130px 60px 130px 0;
+            .modal {
+                &__left {
+                    min-width: 585px;
+                    width: 585px;
+                    margin-right: 110px;
+                }
+                &__right {
+                    width: 100%;
+                    &__top {
+                        margin-bottom: 100px;
+                        span {
+                            font-size: 72px;
+                            line-height: 79.5%;
+                            color: #181818;
+                            transform: rotate(-7.42deg);
+                            display: block;
+                            @include fontItalic();
+                        }
+                    }
+                    &__desc {
+                        margin-bottom: 50px;
+                        p {
+                            margin: 0 0 20px 0;
+                            font-weight: 300;
+                            font-size: 18px;
+                            line-height: 117%;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    &__list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 0 -10px;
+                        margin-bottom: 70px;
+                        ul {
+                            max-width: 50%;
+                            width: 100%;
+                            padding: 0 10px;
+                            li {
+                                padding-left: 30px;
+                                line-height: 115%;
+                                letter-spacing: 0.035em;
+                                position: relative;
+                                margin-bottom: 15px;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                                &::after {
+                                    content: '';
+                                    height: 6px;
+                                    width: 17px;
+                                    position: absolute;
+                                    background: $c-primary;
+                                    left: 0;
+                                    top: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.is--app {
+            display: flex;
+            padding: 50px;
+            align-items: flex-end;
+            .modal {
+                &__left {
+                    min-width: 630px;
+                    width: 630px;
+                    margin-right: 60px;
+                }
+                &__right {
+                    padding-bottom: 85px;
+                    &__top {
+                        margin-bottom: 90px;
+                        span {
+                            font-size: 72px;
+                            line-height: 79.5%;
+                            color: #181818;
+                            transform: rotate(-7.42deg);
+                            display: block;
+                            @include fontItalic();
+                        }
+                    }
+                    &__appname {
+                        margin-bottom: 40px;
+                        &__sub {
+                            font-weight: 300;
+                            font-size: 36px;
+                        }
+                        &__title {
+                            font-weight: 600;
+                            font-size: 64px;
+                        }
+                    }
+                    &__desc {
+                        margin-bottom: 60px;
+                        p {
+                            margin: 0 0 20px 0;
+                            font-weight: 300;
+                            font-size: 18px;
+                            line-height: 117%;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     &__sub {
@@ -165,11 +411,21 @@
             margin: 0 -15px;
             display: flex;
             margin-bottom: 80px;
+            flex-wrap: wrap;
             &.is--th {
                 .modal {
                     &__form {
                         &__block {
                             max-width: 33.333333%;
+                        }
+                    }
+                }
+            }
+            &.is--fv {
+                .modal {
+                    &__form {
+                        &__block {
+                            max-width: 50%;
                         }
                     }
                 }
@@ -213,6 +469,421 @@
                         transition: .25s all ease;
                     }
                 }
+            }
+        }
+        &__footer {
+            display: flex;
+            align-items: center;
+            &__left {
+                margin-right: 30px;
+            }
+            &__right {
+                font-weight: 300;
+                font-size: 14px;
+                a {
+                    color: inherit;
+                    transition: .25s all ease;
+                    &:hover {
+                        color: $c-primary;
+                    }
+                }
+            }
+        }
+    }
+    &__success {
+        text-align: center;
+        span {
+            display: block;
+            font-size: 96px;
+            line-height: 91.5%;
+            color: #181818;
+            transform: rotate(-7.42deg);
+            @include fontItalic();
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .modal {
+        &__inner {
+            &.is--trainer {
+                padding-left: 80px;
+                padding-right: 80px;
+                .modal {
+                    &__left {
+                        min-width: 320px;
+                        width: 320px;
+                        margin-right: 50px;
+                    }
+                    &__right {
+                        padding-bottom: 50px;
+                    }
+                }
+            }
+            &.is--card {
+                .modal {
+                    &__left {
+                        min-width: 320px;
+                        width: 320px;
+                        margin-right: 50px;
+                    }
+                }
+            }
+            &.is--app {
+                padding: 50px 20px;
+                .modal {
+                    &__left {
+                        min-width: 440px;
+                        width: 440px;
+                        margin-right: 30px;
+                    }
+                    &__right {
+                        &__top {
+                            margin-bottom: 60px;
+                        }
+                        &__appname {
+                            &__title {
+                                font-size: 54px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .modal {
+        &__inner {
+            &.is--ice {
+                padding: 100px 50px 65px;
+            }
+            &.is--trainer {
+                .modal {
+                    &__right {
+                        &__top {
+                            margin-bottom: 60px;
+                            &__left {
+                                span {
+                                    font-size: 56px !important;
+                                }
+                            }
+                        }
+                        &__main {
+                            &__bname {
+                                font-size: 36px;
+                                margin-bottom: 30px;
+                            }
+                            &__sp {
+                                margin-bottom: 30px;
+                                &__title {
+                                    font-size: 16px;
+                                    br {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            &__name {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.is--card {
+                padding: 130px 30px 130px 0;
+                .modal {
+                    &__right {
+                        &__top {
+                            span {
+                                font-size: 56px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.is--app {
+                .modal {
+                    &__right {
+                        &__top {
+                            span {
+                                font-size: 56px;
+                            }
+                        }
+                        &__appname {
+                            margin-bottom: 20px;
+                            &__sub {
+                                font-size: 26px;
+                            }
+                            &__title {
+                                font-size: 42px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__success {
+            span {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .modal {
+        &__sub {
+            br {
+                display: none;
+            }
+        }
+        &__inner {
+            &.is--trainer {
+                flex-wrap: wrap;
+                padding: 0 !important;
+                .modal {
+                    &__left {
+                        margin-right: 0;
+                        max-width: 100%;
+                        min-width: 0;
+                        width: 100%;
+                        padding: 30px 50px 0 50px;
+                        background: #EEEDED;
+                        &__trainer {
+                            max-width: 230px;
+                            margin: 0 auto;
+                        }
+                    }
+                    &__right {
+                        padding: 50px 30px !important;
+                    }
+                }
+            }
+            &.is--card {
+                padding: 80px 30px;
+                .modal {
+                    &__left {
+                        display: none;
+                    }
+                }
+            }
+            &.is--app {
+                padding: 0;
+                flex-wrap: wrap;
+                .modal {
+                    &__left {
+                        background: #EEEDED;
+                        max-width: 100%;
+                        min-width: 0;
+                        width: 100%;
+                        padding: 30px 50px;
+                        margin-right: 0;
+                        img {
+                            max-width: 250px;
+                            margin: 0 auto;
+                            display: block;
+                        }
+                    }
+                    &__right {
+                        padding: 50px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .modal {
+        &__inner {
+            &.is--ice {
+                padding-top: 40px;
+            }
+            &.is--trainer {
+                .modal {
+                    &__left {
+                        padding-top: 80px;
+                    }
+                    &__right {
+                        &__top {
+                            margin-bottom: 40px !important;
+                            &__left {
+                                span {
+                                    font-size: 30px !important;
+                                }
+                            }
+                            &__right {
+                                font-size: 16px;
+                                span {
+                                    display: none;
+                                }
+                            }
+                        }
+                        &__main {
+                            margin-bottom: 40px !important;
+                            &__name {
+                                font-size: 16px;
+                                margin-bottom: 15px;
+                            }
+                            &__bname {
+                                font-size: 18px;
+                            }
+                            &__sp {
+                                &__sub {
+                                    margin-bottom: 0;
+                                }
+                            }
+                            &__desc {
+                                margin-bottom: 30px !important;
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+                            &__footer {
+                                flex-wrap: wrap;
+                                &__left {
+                                    font-size: 16px;
+                                }
+                                &__left,
+                                &__right {
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.is--card {
+                padding: 85px 30px 50px 30px;
+                flex-wrap: wrap;
+                .modal {
+                    &__right {
+                        &__top {
+                            margin-bottom: 40px;
+                            span {
+                                font-size: 30px;
+                            }
+                        }
+                        &__desc {
+                            margin-bottom: 30px;
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+                        &__list {
+                            flex-wrap: wrap;
+                            margin-bottom: 20px;
+                            ul {
+                                max-width: 100%;
+                                li {
+                                    margin-bottom: 15px !important;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.is--app {
+                .modal {
+                    &__left {
+                        padding-top: 100px;
+                    }
+                    &__right {
+                        padding: 20px 20px 50px 20px;
+                        &__top {
+                            margin-bottom: 50px;
+                            span {
+                                font-size: 30px;
+                            }
+                        }
+                        &__appname {
+                            &__sub {
+                                font-size: 16px;
+                            }
+                            &__title {
+                                font-size: 28px;
+                            }
+                        }
+                        &__desc {
+                            margin-bottom: 30px;
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__heading {
+            margin-bottom: 60px;
+            span {
+                font-size: 40px;
+            }
+        }
+        &__sub {
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 45px;
+        }
+        &__form {
+            &__fields {
+                margin-bottom: 20px;
+                .modal__form__block {
+                    max-width: 100% !important;
+                    margin-bottom: 30px;
+                }
+            }
+            &__footer {
+                flex-wrap: wrap;
+                &__left {
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                }
+                &__right {
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        &__close {
+            width: 45px;
+            height: 45px;
+        }
+        &__success {
+            span {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .modal {
+        width: 100%;
+        &__inner {
+            &.is--ice {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            &.is--success {
+                padding: 100px 20px 50px 20px;
+            }
+        }
+        &__heading {
+            margin-bottom: 40px;
+            span {
+                font-size: 24px;
+            }
+        }
+        &__sub {
+            font-size: 14px;
+        }
+        &__success {
+            span {
+                font-size: 30px;
             }
         }
     }

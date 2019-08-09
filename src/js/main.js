@@ -31,5 +31,12 @@
             setPaddings()
         })
 
+        $('form').parsley()
+
+        var phoneMask = IMask(
+            document.getElementsByClassName('input-phone'), {
+              mask: '+{7}(000)000-00-00'
+            });
+
     })
 })(jQuery);
