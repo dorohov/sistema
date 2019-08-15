@@ -20,7 +20,7 @@ function openModal(modalID) {
         })
 
         // openModal('#modal_ice')
-        openModal('#modal_form')
+        // openModal('#modal_form')
         // openModal('#modal_success')
         // openModal('#modal_table')
         // openModal('#modal_trainer')

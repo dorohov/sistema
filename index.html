@@ -92,9 +92,47 @@
     </div>
     <main>
         <div class="banner">
-            <div class="banner__inner">
-
-
+            <div class="banner__inner is--c-pl">
+                <div class="banner__wrap">
+                    <div class="banner__wrap__left">
+                        <div class="banner__wrap__heading">
+                            <div class="banner__wrap__heading__top">
+                                <span>Фитнес клуб</span>
+                            </div>
+                            <div class="banner__wrap__heading__text">
+                                Система
+                            </div>
+                            <!-- <div class="banner__wrap__heading__top"></div> -->
+                        </div>
+                        <div class="banner__wrap__scroll">
+                            <button>
+                                <img src="img/scrolldown.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="banner__wrap__social">
+                            <div class="social is--left is--primary">
+                                <ul>
+                                    <li>
+                                        <a href="#">Vk</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">In</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Fb</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__wrap__right">
+                        <div class="banner__carousel">
+                            <div class="banner__carousel__item">
+                                <img src="img/banner_woman.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="banner__circle">
                 <div class="banner__circle__block is--on"></div>
@@ -209,12 +247,12 @@
                             </button>
                         </div>
                     </div>
-                    <div class="zones__carousel__mouse">
+                    <div class="zones__carousel__mouse" id="cz_target">
                         <span class="is--left"></span>
                         <span class="is--right"></span>
-                        <!-- <div class="is--cursor" id="zonescursor">
-                    <img src="img/cursor.svg">
-                </div> -->
+                        <div class="is--cursor" id="zonescursor">
+                            <div class="is--inner"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -439,7 +477,7 @@
                         <span class="is--line"></span>
                     </div>
                     <div class="modal__form__block">
-                        <input type="text" placeholder="Телефон" required class="input-phone">
+                        <input type="text" placeholder="Телефон" required class="input-phone" data-parsley-minlength="16" data-parsley-maxlength="16">
                         <span class="is--line"></span>
                     </div>
                 </div>

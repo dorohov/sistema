@@ -236,12 +236,12 @@
                             </button>
                         </div>
                     </div>
-                    <div class="zones__carousel__mouse">
+                    <div class="zones__carousel__mouse" id="cz_target">
                         <span class="is--left"></span>
                         <span class="is--right"></span>
-                        <!-- <div class="is--cursor" id="zonescursor">
-                    <img src="img/cursor.svg">
-                </div> -->
+                        <div class="is--cursor" id="zonescursor">
+                            <div class="is--inner"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -415,7 +415,7 @@
                         <span class="is--line"></span>
                     </div>
                     <div class="modal__form__block">
-                        <input type="text" placeholder="Телефон" required class="input-phone">
+                        <input type="text" placeholder="Телефон" required class="input-phone" data-parsley-minlength="16" data-parsley-maxlength="16">
                         <span class="is--line"></span>
                     </div>
                 </div>

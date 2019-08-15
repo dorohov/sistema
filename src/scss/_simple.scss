@@ -103,6 +103,7 @@
     overflow: hidden;
     &__inner {
         display: flex;
+        align-items: flex-start;
     }
     &__left {
         min-width: 540px;
@@ -160,12 +161,14 @@
             cursor: none;
             span {
                 width: 50%;
-                &.is--left {
-                    cursor: url(../../img/cursor_left.svg), auto;
-                }
-                &.is--right {
-                    cursor: url(../../img/cursor_right.svg), auto;
-                }
+                position: relative;
+                z-index: 999999999;
+                // &.is--left {
+                //     cursor: url(../../img/cursor_left.svg), auto;
+                // }
+                // &.is--right {
+                //     cursor: url(../../img/cursor_right.svg), auto;
+                // }
             }
             .is--cursor {
                 position: absolute;
@@ -194,6 +197,28 @@
                 }
             }
         }
+    }
+}
+
+#zonescursor {
+    position: fixed;
+    pointer-events: none;
+    transition: transform .25s ease;
+    .is--inner {
+        transition: transform .25s ease;
+        transform: scale(0) rotate(360deg);
+        width: 93px;
+        height: 93px;
+        background-image: url(../../img/cursor.svg);
+    }
+    &.is--visible {
+        .is--inner {
+            transform: scale(1);
+            transition: transform .25s ease;
+        }
+    }
+    &.is--left {
+        transform: rotate(-180deg);
     }
 }
 

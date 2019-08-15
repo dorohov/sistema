@@ -175,9 +175,6 @@
     background: #212121;
     position: relative;
     overflow: hidden;
-    &__inner {
-        min-height: 100vh;
-    }
     &__circle {
         &__block {
             border: 1px solid rgba(255, 255, 255, 0.06);
@@ -204,6 +201,69 @@
                 border: none;
                 @include primaryGradient();
                 animation: pulse2 2.7s infinite;
+            }
+        }
+    }
+    &__wrap {
+        padding: 150px 0 100px 0;
+        position: relative;
+        z-index: 999;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        height: 100%;
+        min-height: 100vh;
+        &__heading {
+            color: #fff;
+            margin-bottom: 15vh;
+            &__top {
+                @include fontItalic();
+                font-size: 3.3vw;
+                line-height: 91.5%;
+            }
+            &__text {
+                @include fontBold();
+                text-transform: uppercase;
+                font-size: 11.3vw;
+                line-height: 91.5%;
+            }
+        }
+        &__scroll {
+            margin-bottom: 4.7vw;
+            button {
+                padding: 0;
+                border: 0;
+                cursor: pointer;
+                background: transparent;
+                svg {
+                    transition: .25s all ease;
+                }
+                &:hover {
+                    svg {
+                        fill: $c-primary;
+                    }
+                }
+            }
+        }
+        &__left {
+            width: 100%;
+            position: relative;
+            z-index: 9;
+        }
+        &__right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding-left: 24vw;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .banner {
+        &__wrap {
+            &__right {
+                padding-left: 14vw;
             }
         }
     }
@@ -274,6 +334,43 @@
                 &.is--on {
                     width: 160vw;
                     height: 160vw;
+                }
+            }
+        }
+        &__wrap {
+            padding: 200px 0 40px 0;
+            &__left {
+                min-height: calc(100vh - #{200px + 40px});
+                height: 1px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            &__scroll {
+                margin-top: auto;
+                margin-bottom: 40px;
+                button {
+                    img {
+                        max-width: 63px;
+                    }
+                }
+            }
+            &__social {
+                .social {
+                    ul {
+                        li {
+                            a {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    &.is--left {
+                        ul {
+                            li {
+                                padding-right: 25px;
+                            }
+                        }
+                    }
                 }
             }
         }

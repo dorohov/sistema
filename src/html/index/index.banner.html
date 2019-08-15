@@ -1,7 +1,36 @@
 <div class="banner">
-    <div class="banner__inner">
-        
-        
+    <div class="banner__inner is--c-pl">
+        <div class="banner__wrap">
+            <div class="banner__wrap__left">
+                <div class="banner__wrap__heading">
+                    <div class="banner__wrap__heading__top">
+                        <span>Фитнес клуб</span>
+                    </div>
+                    <div class="banner__wrap__heading__text">
+                        Система
+                    </div>
+                    <!-- <div class="banner__wrap__heading__top"></div> -->
+                </div>
+                <div class="banner__wrap__scroll">
+                    <button>
+                        <img src="img/scrolldown.svg" alt="">
+                    </button>
+                </div>
+                <div class="banner__wrap__social">
+                    @@include('../components/component.social.html', {
+                        "align": "left",
+                        "color": "primary"
+                    })
+                </div>
+            </div>
+            <div class="banner__wrap__right">
+                <div class="banner__carousel">
+                    <div class="banner__carousel__item">
+                        <img src="img/banner_woman.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="banner__circle">
         <div class="banner__circle__block is--on"></div>

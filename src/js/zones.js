@@ -72,14 +72,31 @@
       $('.zones__carousel__mouse .is--right, .zones__carousel__controls button.is--next').on('click', function() {
         swiper.slideNext();
       })
-      
-      $('.zones__carousel__mouse').hover(function() {
 
-      }, function() {
-
+      $('#cz_target')
+      .mousemove(function() {
+        $('#zonescursor').addClass('is--visible')
+      })
+      .mouseleave(function() {
+        $('#zonescursor').removeClass('is--visible')
       })
 
-      
+      $('.zones__carousel__mouse span.is--left').hover(function() {
+        $('#zonescursor').addClass('is--left')
+      }, function() {
+        $('#zonescursor').removeClass('is--left')
+      })
+
+      document.addEventListener('mousemove', function(ev){
+        if($('#zonescursor').length > 0) {
+          document.getElementById('zonescursor').style.left = ev.clientX-42 + 'px';
+          document.getElementById('zonescursor').style.top = ev.clientY-42 + 'px';       
+        }
+      },false);  
+
+      $(window).scroll(function(e) {
+        $('#zonescursor').removeClass('is--visible')
+      })
 
     })
 })(jQuery);
