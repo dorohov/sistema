@@ -23,6 +23,7 @@
         "article.text": "article.text.html",
         "article.onimg": "article.onimg.html",
         "info": "info.html",
-        "info.item": "info.item.html"
+        "info.item": "info.item.html",
+        "map": "map.html"
     }
 }

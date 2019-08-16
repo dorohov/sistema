@@ -1,0 +1,132 @@
+.info {
+    padding: 50px 0 120px 0;
+    overflow: hidden;
+    &__inner {
+        display: flex;
+    }
+    &__left {
+        max-width: 565px;
+        min-width: 565px;
+        width: 565px;
+        width: 100%;
+        padding-right: 30px;
+        &__desc {
+            margin-bottom: 110px;
+        }
+        &__links {
+            &__inner {
+                display: flex;
+                a {
+                    display: block;
+                    border: 1px solid #000000;
+                    border-radius: 50px;
+                    color: #000;
+                    font-size: 18px;
+                    background: #fff;
+                    transition: .25s all ease;
+                    &:hover {
+                        background: $c-primary;
+                        color: #fff;
+                        border-color: $c-primary;
+                    }
+                    &.is--woman {
+                        padding: 10px 75px 10px 35px;
+                    }
+                    &.is--man {
+                        padding: 10px 55px;
+                        transform: translateX(-55px);
+                    }
+                }
+            }
+        }
+    }
+    &__right {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            max-width: 630px;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            z-index: 999;
+        }
+        &__circles {
+            &__block {
+                border: 1px solid rgba(#000, 0.15);
+                border-radius: 100%;
+                margin: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 100;
+                &.is--on {
+                    width: 46.5vw;
+                    height: 46.5vw;
+                    animation: pulse 2.7s infinite;
+                }
+                &.is--tw {
+                    width: 32.1vw;
+                    height: 32.1vw;
+                    animation: pulse1 2.7s infinite;
+                }
+                &.is--th {
+                    width: 21.9vw;
+                    height: 21.9vw;
+                    border: none;
+                    @include primaryGradient();
+                    animation: pulse2 2.7s infinite;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .info {
+        &__right {
+            img {
+                max-width: 480px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .info {
+        &__right {
+            display: none;
+        }
+        &__left {
+            padding-right: 0;
+            max-width: 100%;
+            min-width: 0;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        padding: 50px 0;
+        &__left {
+            &__desc {
+                margin-bottom: 40px;
+            }
+            &__links {
+                a {
+                    &.is--man {
+                        padding: 10px 35px;
+                    }
+                    &.is--woman {
+                        padding: 10px 65px 10px 25px;
+                    }
+                }
+            }
+        }
+    }
+}

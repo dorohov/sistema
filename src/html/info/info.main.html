@@ -1,0 +1,39 @@
+<div class="info">
+    <div class="info__inner container">
+        <div class="info__left">
+            @@include('../components/component.breadcrumbs.html', {
+                "list": [
+                    {
+                        "title": "Главная",
+                        "url": "@@pages.index"
+                    }
+                ],
+                "current": "Полезная информация"
+            })
+            <div class="heading is--black">
+                <div class="heading__sub">Полезная</div>
+                <div class="heading__title"><span>Информация</span></div>
+            </div>
+            <div class="info__left__desc article">
+                <p>Система — это множество элементов, взаимодействующих друг 
+                        с другом, образующих целостность и единство. Название нашего клуба выбрано не случайно, ведь именно слово «система» четко описывает наше видение современной фитнес индустрии.
+                        </p>
+                <p>Наш клуб - ведущая компания на рынке фитнес услуг города Орла. Расположен в самом центре города, в шаговой и транспортной доступности, в ТЦ «Водолей» на 3 этаже.</p>
+            </div>
+            <div class="info__left__links">
+                <div class="info__left__links__inner">
+                    <a href="@@pages.map" class="is--woman">Женщина</a>
+                    <a href="@@pages.map" class="is--man">Мужчина</a>
+                </div>
+            </div>
+        </div>
+        <div class="info__right">
+            <img src="img/info.png" alt="Полезная информация">
+            <div class="info__right__circles">
+                <div class="info__right__circles__block is--on"></div>
+                <div class="info__right__circles__block is--tw"></div>
+                <div class="info__right__circles__block is--th"></div>
+            </div>
+        </div>
+    </div>
+</div>

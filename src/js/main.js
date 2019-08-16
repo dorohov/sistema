@@ -22,6 +22,9 @@
             $(classes.height100Per).css({
                 minHeight: 'calc(100vh - ' + height + 'px)'
             })
+            $('main').css({
+                minHeight: 'calc(100vh - ' + height + 'px)'
+            })
 
         }
 

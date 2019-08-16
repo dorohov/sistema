@@ -7,6 +7,12 @@
                 padding-right: 25px !important;
                 a {
                     font-size: 18px;
+                    height: 20px;
+                    &:hover {
+                        span {
+                            transform: matrix(1,0,0,1,0,-20);
+                        }
+                    }
                 }
             }
         }

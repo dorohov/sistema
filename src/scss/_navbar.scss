@@ -43,10 +43,32 @@
             font-size: 18px;
             cursor: pointer;
             outline: none;
+            display: flex;
+            align-items: center;
             svg {
                 fill: $c-primary;
                 vertical-align: baseline;
-                margin-right: 5px;
+                margin-right: 10px;
+            }
+            span {
+                &.is--label {
+                    height: 20px;
+                    display: block;
+                    overflow: hidden;
+                    span {
+                        &.is--label-inner {
+                            display: block;
+                            transition: .25s all ease;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                span {
+                    &.is--label-inner {
+                        transform: matrix(1,0,0,1,0,-20);
+                    }
+                }
             }
         }
     }
@@ -235,6 +257,10 @@
                 border: 0;
                 cursor: pointer;
                 background: transparent;
+                transition: .25s all ease;
+                &:hover {
+                    transform: translateY(10px);
+                }
                 svg {
                     transition: .25s all ease;
                 }
@@ -250,11 +276,17 @@
             position: relative;
             z-index: 9;
         }
-        &__right {
+    }
+    &__carousel {
+        &__item {
             position: absolute;
             bottom: 0;
             right: 0;
-            padding-left: 24vw;
+            padding-left: 42vw;
+            opacity: 0;
+            &.is--man {
+                padding-right: 80px;
+            }
         }
     }
 }
@@ -263,7 +295,11 @@
     .banner {
         &__wrap {
             &__right {
-                padding-left: 14vw;
+            }
+        }
+        &__carousel {
+            &__item {
+                padding-left: 34vw;
             }
         }
     }
@@ -338,39 +374,34 @@
             }
         }
         &__wrap {
-            padding: 200px 0 40px 0;
+            padding: 110px 0 40px 0;
+            min-height: 0;
+            &__heading {
+                margin-bottom: 0;
+                &__top {
+                    font-size: 7.3vw;
+                }
+                &__text {
+                    font-size: 21.3vw;
+                }
+            }
             &__left {
-                min-height: calc(100vh - #{200px + 40px});
+                min-height: 110vw;
                 height: 1px;
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
             }
-            &__scroll {
-                margin-top: auto;
-                margin-bottom: 40px;
-                button {
-                    img {
-                        max-width: 63px;
-                    }
-                }
-            }
+            &__scroll,
             &__social {
-                .social {
-                    ul {
-                        li {
-                            a {
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                    &.is--left {
-                        ul {
-                            li {
-                                padding-right: 25px;
-                            }
-                        }
-                    }
+                display: none;
+            }
+        }
+        &__carousel {
+            &__item {
+                padding-left: 10vw;
+                &.is--man {
+                    padding-right: 0;
                 }
             }
         }
@@ -389,6 +420,29 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .banner {
+        &__wrap {
+            &__heading {
+                &__top {
+                    font-size: 6.3vw;
+                }
+                &__text {
+                    font-size: 17.3vw;
+                }
+            }
+            &__left {
+                min-height: 105vw;
+            }
+        }
+        &__carousel {
+            &__item {
+                padding-left: 0;
             }
         }
     }

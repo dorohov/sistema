@@ -17,8 +17,17 @@
                 letter-spacing: 0.035em;
                 transition: .25s all ease;
                 display: block;
+                height: 27px;
+                overflow: hidden;
+                span {
+                    transform: matrix(1,0,0,1,0,0);
+                    transition: .25s all ease;
+                    display: block;
+                }
                 &:hover {
-                    // Сделать наведение
+                    span {
+                        transform: matrix(1,0,0,1,0,-27);
+                    }
                 }
             }
         }

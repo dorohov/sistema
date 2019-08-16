@@ -75,7 +75,7 @@
 
         function setDarkNavbar() {
 
-            if($(document).scrollTop() > $('.navbar').innerHeight()) {
+            if($(document).scrollTop() > 50) {
                 $('.navbar')
                         .removeClass('is--transparent')
                         .addClass('is--default')
@@ -110,11 +110,11 @@
            }
        });
 
-        $(".banner__right__carousel__items__block img").mousedown(function(){
+        $(".banner__carousel__item img").mousedown(function(){
             return false;
         });
 
-        var images = $('.banner__right__carousel__items__block img'),
+        var images = $('.banner__carousel__item'),
             currentSlide = 0,
             countSlides = images.length,
             slidesInterval = 4.5
@@ -153,7 +153,7 @@
         }
 
         setInterval(function() {
-            // changeSlides()
+            changeSlides()
         }, 6000)
 
         $('.banner__left__scroll').on('click', function() {
