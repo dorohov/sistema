@@ -114,6 +114,10 @@
             return false;
         });
 
+        $(".body-map__right__persons__list img").mousedown(function(){
+            return false;
+        });
+
         var images = $('.banner__carousel__item'),
             currentSlide = 0,
             countSlides = images.length,

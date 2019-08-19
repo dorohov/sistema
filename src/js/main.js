@@ -47,5 +47,11 @@
             }
         }
 
+        $('.body-map__right__inner').sticky({
+            topSpacing: 100,
+            responsiveWidth: true,
+            bottomSpacing: $('.footer').innerHeight() + 100
+        });
+
     })
 })(jQuery);

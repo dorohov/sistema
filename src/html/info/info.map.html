@@ -1,0 +1,43 @@
+<div class="body-map">
+    <div class="body-map__inner container">
+        <div class="body-map__left">
+            @@include('../components/component.breadcrumbs.html', {
+                "list": [
+                    {
+                        "title": "Главная",
+                        "url": "@@pages.index"
+                    }
+                ],
+                "current": "Полезная информация"
+            })
+            <div class="heading is--black">
+                <div class="heading__sub">Полезная</div>
+                <div class="heading__title"><span>Информация</span></div>
+            </div>
+            @@include('info.map.applist.html')
+        </div>
+        <div class="body-map__right">
+            <div class="body-map__right__inner">
+                <div class="body-map__right__persons">
+                    <div class="body-map__right__persons__list">
+                        @@include('persons/person.woman.front.html')
+                    </div>
+                </div>
+                <div class="body-map__right__controls">
+                    <button class="is--prev">
+                        <img src="img/person_arrow.svg" alt="Назад">
+                    </button>
+                    <button class="is--next">
+                        <img src="img/person_arrow.svg" alt="Вперед">
+                    </button>
+                </div>
+                <div class="body-map__right__switcher">
+                    <div class="info__left__links__inner is--red">
+                        <a href="@@pages.map" class="is--woman">Женщина</a>
+                        <a href="@@pages.map" class="is--man is--active">Мужчина</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
