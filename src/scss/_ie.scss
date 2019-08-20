@@ -1,3 +1,153 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    
+    img[src$=".svg"] {
+        width: 100%; 
+      }
+    .navbar {
+        &__bar {
+            &__menu {
+                ul {
+                    li {
+                        a {
+                            text-shadow: rgb(18, 18, 18) 1px 0px 0px, rgb(18, 18, 18) 0.540302px 0.841471px 0px, rgb(18, 18, 18) -0.416147px 0.909297px 0px, rgb(18, 18, 18) -0.989992px 0.14112px 0px, rgb(18, 18, 18) -0.653644px -0.756802px 0px, rgb(18, 18, 18) 0.283662px -0.958924px 0px, rgb(18, 18, 18) 0.96017px -0.279415px 0px;
+                            &:hover {
+                                text-shadow: rgb(249, 211, 109) 1px 0px 0px, rgb(249, 211, 109) 0.540302px 0.841471px 0px, rgb(249, 211, 109) -0.416147px 0.909297px 0px, rgb(249, 211, 109) -0.989992px 0.14112px 0px, rgb(249, 211, 109) -0.653644px -0.756802px 0px, rgb(249, 211, 109) 0.283662px -0.958924px 0px, rgb(249, 211, 109) 0.96017px -0.279415px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner__circle {
+        &__block {
+            &.is--on {
+                transform: none !important;
+                left: calc(50% - 35vw);
+                top: calc(50% - 35vw);
+                animation: none !important;
+            }
+            &.is--tw {
+                transform: none !important;
+                left: calc(50% - 24vw);
+                top: calc(50% - 24vw);
+                animation: none !important;
+            }
+            &.is--th {
+                transform: none !important;
+                left: calc(50% - 15.15vw);
+                top: calc(50% - 15.15vw);
+                animation: none !important;
+            }
+        }
+    }
+    .info {
+        &__right {
+            flex-direction: column;
+            &__circles {
+                &__block {
+                    &.is--on {
+                        transform: none !important;
+                        left: calc(50% - 23.25vw);
+                        top: calc(50% - 23.25vw);
+                        animation: none !important;
+                    }
+                    &.is--tw {
+                        transform: none !important;
+                        left: calc(50% - 16.05vw);
+                        top: calc(50% - 16.05vw);
+                        animation: none !important;
+                    }
+                    &.is--th {
+                        transform: none !important;
+                        left: calc(50% - 10.95vw);
+                        top: calc(50% - 10.95vw);
+                        animation: none !important;
+                    }
+                }
+            }
+        }
+    }
+    .about {
+        &-top {
+            &__circles {
+                &__block {
+                    &.is--on {
+                        transform: none !important;
+                        left: calc(50% - 26vw);
+                        top: calc(50% - 26vw);
+                        animation: none !important;
+                    }
+                    &.is--tw {
+                        transform: none !important;
+                        left: calc(50% - 17.5vw);
+                        top: calc(50% - 17.5vw);
+                        animation: none !important;
+                    }
+                    &.is--th {
+                        transform: none !important;
+                        left: calc(50% - 12vw);
+                        top: calc(50% - 12vw);
+                        animation: none !important;
+                    }
+                }
+            }
+        }
+    }
+    .body-map {
+        &__right__persons {
+            &__circles {
+                &__block {
+                    &.is--on {
+                        transform: none !important;
+                        left: calc(50% - 26vw);
+                        top: calc(50% - 26vw);
+                        animation: none !important;
+                    }
+                    &.is--tw {
+                        transform: none !important;
+                        left: calc(50% - 17.5vw);
+                        top: calc(50% - 17.5vw);
+                        animation: none !important;
+                    }
+                    &.is--th {
+                        transform: none !important;
+                        left: calc(50% - 12vw);
+                        top: calc(50% - 12vw);
+                        animation: none !important;
+                    }
+                }
+            }
+        }
+    }
+    .footer__bottom__cop {
+        height: 14px;
+    }
+    .footer__bottom__dorohov__text {
+        transition: 0 !important;
+    }
+    .team-list__block__left__name {
+        display: flex;
+        align-items: flex-end;
+    }
+    .team-list__block__right img {
+        width: 100% !important;
+    }
+    @media (max-width: 768px) {
+        .banner__circle {
+            &__block {
+                &.is--on {
+                    left: calc(50% - 80vw);
+                    top: calc(50% - 80vw);
+                }
+                &.is--tw {
+                    left: calc(50% - 53vw);
+                    top: calc(50% - 53vw);
+                }
+                &.is--th {
+                    left: calc(50% - 35vw);
+                    top: calc(50% - 35vw);
+                }
+            }
+        }
+    }
 }

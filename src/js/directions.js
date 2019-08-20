@@ -41,8 +41,8 @@
         }
       });
 
-      $('.directions__menu ul li').on('click', function() {
-        var thisId = $(this).data('id')
+      $('.directions__menu ul li span').on('click touchend', function() {
+        var thisId = $(this).parent('li').data('id')
         setSlide(thisId)
       })
 

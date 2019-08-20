@@ -129,6 +129,8 @@
         width: 100%;
         &__controls {
             button {
+                width: 93px;
+                height: 93px;
                 position: absolute;
                 top: 50%;
                 cursor: pointer;
@@ -137,6 +139,8 @@
                 background: transparent;
                 border: none;
                 margin-top: -40px;
+                background: url(../../img/cursor.svg);
+                background-size: contain;
                 &.is--prev {
                     left: -40px;
                     transform: rotate(180deg);

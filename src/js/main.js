@@ -2,6 +2,8 @@
     "use strict"
     $(function() {
 
+        svg4everybody()
+
         function setPaddings() {
 
             var classes = {

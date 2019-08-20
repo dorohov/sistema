@@ -24,6 +24,7 @@
         "article.onimg": "article.onimg.html",
         "info": "info.html",
         "info.item": "info.item.html",
-        "map": "map.html"
+        "map.woman": "map.woman.html",
+        "map.man": "map.man.html"
     }
 }

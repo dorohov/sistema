@@ -142,6 +142,11 @@
                     display: none;
                 }
             }
+            &__logo {
+                svg {
+                    transition: .25s all ease;
+                }
+            }
             svg {
                 fill: rgba(#fff, .37);
                 transition: .25s all ease;
