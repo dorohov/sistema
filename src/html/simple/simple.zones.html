@@ -3,15 +3,22 @@
         <div class="zones__left">
             <div class="zones__left__title">
                 <div class="heading is--arrow is--black is--bg-ff">
-                    <div class="heading__sub">Фитнес</div>
-                    <div class="heading__title"><span>Зоны</span></div>
+                    <div class="heading__sub">@@toptitle</div>
+                    <div class="heading__title"><span>@@title</span></div>
                 </div>
             </div>
             <div class="zones__left__heading">Title</div>
             <div class="zones__left__content">Description</div>
-            <div class="zones__left__btn">
-                <a href="/page" class="btn"><span>Подробнее</span></a>
-            </div>
+            @@if(type == 'default') {
+                <div class="zones__left__btn">
+                    <a href="/page" class="btn"><span>Подробнее</span></a>
+                </div>
+            }
+            @@if(type == 'card') {
+                <div class="zones__left__btn">
+                    <a class="modal-open btn" href="#" onclick="openModal('#modal_form')"><span>Заказать карту</span></a>
+                </div>
+            }
         </div>
         <div class="zones__right">
             <div class="zones__carousel">

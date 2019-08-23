@@ -55,5 +55,15 @@
             bottomSpacing: $('.footer').innerHeight() + 100
         });
 
+        $('.anchor').on('click', function(e) {
+            e.preventDefault();
+            var _this = $(this)
+            var aid = _this.attr("href");
+            if(!aid) {
+                aid = _this.data('target')
+            }
+            $('html,body').animate({scrollTop: $(aid).offset().top - $('.navbar').innerHeight()},'slow');
+        })
+
     })
 })(jQuery);

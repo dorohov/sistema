@@ -8,7 +8,7 @@
           $('.zones__carousel__mouse').css({
             maxWidth: itemWidth
           })
-        }, 10)
+        }, 50)
       }
 
       function setSlideInfo(slideId) {
@@ -37,7 +37,6 @@
         }
       }
 
-      setDesktopNavsContainerWidth()
 
       $(window).resize(function() {
         setDesktopNavsContainerWidth()
@@ -58,6 +57,7 @@
           init: function() {
             setSlidesTitle()
             setSlideInfo(0)
+            setDesktopNavsContainerWidth()
           },
           slideChange: function() {
             setSlideInfo(swiper.activeIndex)
