@@ -8,7 +8,7 @@
           $('.zones__carousel__mouse').css({
             maxWidth: itemWidth
           })
-        }, 50)
+        }, 150)
       }
 
       function setSlideInfo(slideId) {
@@ -60,7 +60,7 @@
             setDesktopNavsContainerWidth()
           },
           slideChange: function() {
-            setSlideInfo(swiper.activeIndex)
+            setSlideInfo($(swiper.slides[swiper.realIndex]).data('id'))
           }
         }
       });
