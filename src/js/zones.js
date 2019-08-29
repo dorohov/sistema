@@ -56,7 +56,7 @@
         on: {
           init: function() {
             setSlidesTitle()
-            setSlideInfo(0)
+            setSlideInfo($($('.zones__carousel__item')[0]).data('id'))
             setDesktopNavsContainerWidth()
           },
           slideChange: function() {
