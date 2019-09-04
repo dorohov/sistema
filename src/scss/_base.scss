@@ -9,6 +9,9 @@ body {
             visibility: visible;
         }
     }
+    &.is--preloader {
+        overflow: hidden;
+    }
 }
 
 *,
