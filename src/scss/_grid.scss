@@ -268,6 +268,46 @@
     }
 }
 
+button[disabled],
+.is--disabled-btn {
+    cursor: not-allowed;
+    span {
+        color: transparent !important;
+    }
+    &::after {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        content: '';
+        display: block;
+        top: 0;
+        right: 0;
+        background: $c-primary;
+        z-index: 6;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        animation: loadBtn 1s infinite;
+    }
+    &::before {
+        height: 100%;
+    }
+}
+
+@keyframes loadBtn {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 @keyframes preloaderLine {
     0% {
         width: 0%;

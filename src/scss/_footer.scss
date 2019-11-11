@@ -96,6 +96,11 @@
                     svg {
                         fill: #fff;
                     }
+                    &[disabled] {
+                        svg {
+                            opacity: 0;
+                        }
+                    }
                 }
             }
         }

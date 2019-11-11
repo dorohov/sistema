@@ -29,11 +29,14 @@ $t-red: #FFE2E2;
         padding: 65px 0 70px 0;
     }
     &__list {
-        margin-bottom: 90px;
+        padding-top: 50px;
         cursor: grab;
         &__items {
             margin: 0 -12px;
             display: flex;
+            .slick-list {
+                width: 100% !important;
+            }
         }
         &__col {
             padding: 0 12px;
@@ -263,7 +266,7 @@ $t-red: #FFE2E2;
         }
         &__controls {
             button {
-                top: -40px;
+                top: 180px;
             }
         }
     }

@@ -15,6 +15,7 @@
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.098);
             align-items: center;
             overflow: hidden;
+            cursor: pointer;
             &:hover {
                 .prices {
                     &__block {
@@ -53,11 +54,14 @@
                 }
             }
             &__desc {
-                font-weight: 300;
-                font-size: 18px;
-                line-height: 111%;
-                min-height: 116px;
-                margin-bottom: 15px;
+                p {
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 111%;
+                    min-height: 116px;
+                    margin-bottom: 15px;
+                    margin: 0;
+                }
             }
             &__link {
                 overflow: hidden;
@@ -101,8 +105,10 @@
                     }
                 }
                 &__desc {
-                    font-size: 16px;
-                    min-height: 96px;
+                    p {
+                        font-size: 16px;
+                        min-height: 96px;
+                    }
                 }
             }
         }
@@ -149,9 +155,11 @@
                     }
                 }
                 &__desc {
-                    min-height: 0;
-                    br {
-                        display: none;
+                    p {
+                        min-height: 0;
+                        br {
+                            display: none;
+                        }
                     }
                 }
                 &__link {

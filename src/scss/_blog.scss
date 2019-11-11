@@ -4,13 +4,13 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0 -15px 0 -15px;
+        justify-content: flex-start;
+        margin: 0 -75px;
     }
     &__block {
-        max-width: #{377px + 30px};
+        max-width: 33.333333%;
         width: 100%;
-        padding: 0 15px;
+        padding: 0 75px;
         margin-bottom: 110px;
         &__inner {
             display: block;
@@ -187,8 +187,13 @@
 
 @media (max-width: 1300px) {
     .blog {
+        &__list {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
         &__block {
-            max-width: 350px;
+            padding-left: 15px;
+            padding-right: 15px;
             &__content {
                 span {
                     font-size: 20px;

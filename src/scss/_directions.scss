@@ -96,6 +96,12 @@
             text-transform: uppercase;
             cursor: pointer;
             transition: .25s all ease;
+            &.is--active {
+                svg {
+                    animation: 1s loadBtn infinite;
+                    animation-fill-mode: forwards;
+                }
+            }
             svg {
                 margin-right: 10px;
                 transition: .25s all ease;
@@ -107,6 +113,15 @@
                 }
             }
         }
+    }
+}
+
+@keyframes loadBtn {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
     }
 }
 

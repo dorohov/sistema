@@ -1,7 +1,3 @@
-(function($) {
-    "use strict"
-    $(function() {
-
         var _classes = {
             open: "is--open"
         }
@@ -35,12 +31,9 @@
         $('.select__label').on('click', function() {
             var thisContainer = $(this).parent('.select')
             toggleDropdown(thisContainer)
-        })
+        });
 
-        $('.select__dropdown ul li').on('click', function() {
-            var thisText = $(this).html()
-            selectItem(thisText)
-        })
-
-    })
-})(jQuery);
+        // $('.select__dropdown ul li').on('click', function() {
+        //     var thisText = $(this).html()
+        //     selectItem(thisText)
+        // })

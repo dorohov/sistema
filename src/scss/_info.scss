@@ -114,6 +114,7 @@
                 display: flex;
                 background: #F7F7F7;
                 padding-top: 15px;
+                cursor: pointer;
                 &:hover {
                     .body-map__applist__block__category span {
                         color: $c-primary;
@@ -295,66 +296,18 @@
     &.is--woman-front {
         max-width: 37vh;
         width: 100%;
-        .person {
-            &-dot {
-                &.is--n1 {
-                    left: 28%;
-                    top: 35%;
-                }
-                &.is--n2 {
-                    left: 53%;
-                    top: 40%;
-                }
-            }
-        }
     }
     &.is--woman-back {
         max-width: 37vh;
         width: 100%;
-        .person {
-            &-dot {
-                &.is--n1 {
-                    left: 38%;
-                    top: 25%;
-                }
-                &.is--n2 {
-                    left: 33%;
-                    top: 20%;
-                }
-            }
-        }
     }
     &.is--man-front {
         max-width: 36vh;
         width: 100%;
-        .person {
-            &-dot {
-                &.is--n1 {
-                    left: 38%;
-                    top: 25%;
-                }
-                &.is--n2 {
-                    left: 33%;
-                    top: 20%;
-                }
-            }
-        }
     }
     &.is--man-back {
         max-width: 36vh;
         width: 100%;
-        .person {
-            &-dot {
-                &.is--n1 {
-                    left: 38%;
-                    top: 25%;
-                }
-                &.is--n2 {
-                    left: 33%;
-                    top: 20%;
-                }
-            }
-        }
     }
     &-dot {
         position: absolute;
@@ -380,7 +333,8 @@
             border-radius: 100%;
             transition: .25s all ease;
         }
-        &:hover {
+        &:hover,
+        &.is--active {
             border-color: #E31D1D;
             background: rgba(#E31D1D, .33);
             width: 39px;
