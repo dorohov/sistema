@@ -24,7 +24,6 @@
         })
 
         function selectItem(item) {
-            alert('Вы выбрали: ' + item)
             closeDropdown()
         }
 
@@ -33,7 +32,11 @@
             toggleDropdown(thisContainer)
         });
 
-        // $('.select__dropdown ul li').on('click', function() {
-        //     var thisText = $(this).html()
-        //     selectItem(thisText)
-        // })
+        $('.select__dropdown ul li').on('click', function() {
+            var thisText = $(this).html()
+            var thisValue = $(this).data('val')
+
+            $(this).parent().parent().siblings('input').val(thisValue)
+            $(this).parent().parent().siblings('.select__label').html(thisText)
+            selectItem(thisText)
+        });

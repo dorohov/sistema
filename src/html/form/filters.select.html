@@ -1,10 +1,11 @@
 <div class="filters-block__row">
     <div class="select">
+        <input type="hidden" name="table_filter4">
         <div class="select__label">Не важно</div>
         <div class="select__dropdown">
             <ul>
                 @@for(var i = 0; i < list.length; i++) {
-                    <li>`+list[i].label+`</li>
+                    <li data-val="1">`+list[i].label+`</li>
                 }
             </ul>
         </div>
