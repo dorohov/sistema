@@ -91,21 +91,26 @@
                 @include fontBold();
                 position: relative;
                 transition: .25s all ease;
-                span {
-                    position: relative;
+                span.is--t {
                     z-index: 1;
                     background: #fff;
+                    overflow: hidden;
                     display: inline-block;
-                    padding-right: 30px;
-                    min-width: 190px;
-
-                }
-                &::after {
-                    content: url(../../img/heading_arrow-dark.svg);
-                    left: -25%;
-                    top: 50%;
-                    position: absolute;
-                    margin-top: -20px;
+                    padding-right: 70px;
+                    position: relative;
+                    &__inner {
+                        padding-right: 10px;
+                        background: #fff;
+                        &::after {
+                            content: url(../../img/heading_arrow-dark.svg);
+                            right: 0;
+                            top: 50%;
+                            position: absolute;
+                            margin-top: -20px;
+                            transform: translateY(-15%);
+                            z-index: -1;
+                        }
+                    }
                 }
             }
         }
@@ -344,8 +349,10 @@
                 &__text {
                     position: static;
                     width: 100%;
-                    &::after {
-                        content: none;
+                    span.is--t__inner {
+                        &::after {
+                            content: none;
+                        }
                     }
                 }
             }
