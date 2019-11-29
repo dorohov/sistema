@@ -70,6 +70,9 @@
                     transition: .25s all ease;
                     position: relative;
                     overflow: hidden;
+                    max-width: 215px;
+                    text-overflow: ellipsis;
+                    overflow: hidden; 
                     &::after {
                         content: url(../../img/heading_arrow-dark.svg);
                         position: absolute;

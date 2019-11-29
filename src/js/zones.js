@@ -11,6 +11,10 @@
         }, 150)
       }
 
+      window.onload = function() {
+        setDesktopNavsContainerWidth()
+      };
+
       function setSlideInfo(slideId) {
         var currentSlide = $('.zones__carousel__item[data-id="' + slideId + '"]')[0],
             currentInfo = {
