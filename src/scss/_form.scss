@@ -96,6 +96,16 @@ input[type="email"] {
             }
         }
     }
+    // &.is--radio {
+    //     label {
+    //         &.is--sq {
+    //             border-radius: 100%;
+    //             span {
+    //                 border-radius: 100% !important;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 .select {
@@ -193,6 +203,7 @@ input[type="email"] {
     left: 15px;
     padding: 8px 15px;
     font-size: 14px;
+    z-index: 1;
     &::after {
         bottom: 100%;
         left: 15px;

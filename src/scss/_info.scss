@@ -135,10 +135,13 @@
                 span {
                     display: inline-block;
                     transform: rotate(-8.53deg);
-                    font-size: 48px;
+                    font-size: 34px;
                     line-height: 91.5%;
                     @include fontItalic();
                     transition: .25s all ease;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    max-width: 200px;
                 }
             }
             &__text {
@@ -268,6 +271,8 @@
                 display: none;
                 z-index: 10;
                 background: #fff;
+                max-height: 350px;
+                overflow: auto;
                 li {
                     padding: 12px 20px;
                     cursor: pointer;
@@ -327,8 +332,8 @@
         transform: translate3d(-12px, -12px, 0);
         span {
             display: block;
-            width: 67%;
-            height: 67%;
+            width: 62%;
+            height: 62%;
             background: $c-primary;
             border-radius: 100%;
             transition: .25s all ease;

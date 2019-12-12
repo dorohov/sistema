@@ -147,10 +147,6 @@
             &__block {
                 max-width: 50%;
                 margin-bottom: 90px !important;
-                &:nth-last-child(1),
-                &:nth-last-child(2) {
-                    margin-bottom: 0 !important;
-                }
                 &__left {
                     &__title {
                         span {
@@ -192,7 +188,7 @@
     }
     .team {
         &-filters {
-            padding: 65px 0 60px;
+            padding: 45px 0 60px;
         }
         &-wrap {
             padding-bottom: 50px;

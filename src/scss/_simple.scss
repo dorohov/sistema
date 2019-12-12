@@ -127,6 +127,9 @@
         width: 100%;
         position: relative;
     }
+    &__mobile {
+        display: none;
+    }
     &__carousel {
         &__inner {
             width: 100%;
@@ -317,6 +320,10 @@
                 max-width: 355px;
                 font-size: 14px;
             }
+        }
+        &__mobile {
+            display: block;
+            padding-top: 50px;
         }
         &__carousel {
             &__mouse {

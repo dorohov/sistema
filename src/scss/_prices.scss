@@ -16,6 +16,7 @@
             align-items: center;
             overflow: hidden;
             cursor: pointer;
+            height: 100%;
             &:hover {
                 .prices {
                     &__block {
@@ -163,6 +164,7 @@
                     }
                 }
                 &__link {
+                    padding-top: 20px;
                     &::after {
                         content: none;
                     }

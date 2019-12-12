@@ -407,7 +407,19 @@
                     </div>
                 </div>
                 <div class="modal__right__btn">
-                    <a href="#modal_form" class="btn modal-open"><span>Записаться</span></a>
+                    <div class="modal__right__btn__link">
+                        <a href="#modal_form" class="btn modal-open"><span>Записаться</span></a>
+                    </div>
+                    <div class="modal__right__btn__soc">
+                        <ul>
+                            <li><a href="#"><svg class="svg-t_vk-dims svg is--t_vk">
+                                        <use xlink:href="img/svg/sprites.svg#t_vk"></use>
+                                    </svg></a></li>
+                            <li><a href="#"><svg class="svg-t_inst-dims svg is--t_inst">
+                                        <use xlink:href="img/svg/sprites.svg#t_inst"></use>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -475,9 +487,25 @@
         </div>
     </div>
     <div id="overlay"></div>
+    <script>
+        function __debug() {
+            console.log('__debug')
+        }
+    </script>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=c0ad8e19-2fef-43ae-80c9-7a01e5ed4e24&lang=ru_RU" type="text/javascript"></script>
     <script src="dist/js/bundle-min.js"></script>
+    <script>
+        $('.headingbar__search').on('submit', function(event) {
+            event.preventDefault();
+            var _this = this;
+            var inText = $(this).find('input[type="text"]');
+            console.log(inText.val().length)
+            if (inText.val().length > 5) {
+                search(event, _this);
+            }
+        })
+    </script>
 </body>
 
 </html>

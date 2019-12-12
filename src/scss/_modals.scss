@@ -173,6 +173,36 @@
                     &.is--xs {
                         padding-bottom: 90px;
                     }
+                    &__btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        ul {
+                            display: flex;
+                            li {
+                                margin-left: 15px;
+                                &:first-child {
+                                    margin-left: 0;
+                                }
+                                a {
+                                    width: 38px;
+                                    height: 38px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    background: $c-primary;
+                                    border-radius: 100%;
+                                    transition: .25s all ease;
+                                    &:hover {
+                                        background: #272727;
+                                    }
+                                    svg {
+                                        fill: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
                     &__top {
                         display: flex;
                         align-items: flex-end;
@@ -366,7 +396,7 @@
                     &__top {
                         margin-bottom: 90px;
                         span {
-                            font-size: 72px;
+                            font-size: 66px;
                             line-height: 79.5%;
                             color: #181818;
                             transform: rotate(-7.42deg);
@@ -708,6 +738,16 @@
                         padding-top: 80px;
                     }
                     &__right {
+                        &__btn {
+                            flex-wrap: wrap;
+                            &__link {
+                                margin-right: 30px;
+                            }
+                            &__link,
+                            &__soc {
+                                padding: 10px 0;
+                            }
+                        }
                         &__top {
                             margin-bottom: 40px !important;
                             &__left {
@@ -733,7 +773,7 @@
                             }
                             &__sp {
                                 &__sub {
-                                    margin-bottom: 0;
+                                    margin-bottom: 10px;
                                 }
                             }
                             &__desc {

@@ -27,6 +27,7 @@
         $('.zones__left__heading').html(currentInfo.title)
         $('.zones__left__content').html(currentInfo.text)
         $('.zones__left__btn a').attr('href', currentInfo.link)
+        $('.zones__mobile__btn a').attr('href', currentInfo.link)
 
       }
 

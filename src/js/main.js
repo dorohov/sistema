@@ -65,5 +65,18 @@
             $('html,body').animate({scrollTop: $(aid).offset().top - $('.navbar').innerHeight()},'slow');
         })
 
+        // $('input[type=radio]').click(function(){
+        //     if (this.previous) {
+        //         this.checked = false;
+        //     }
+        //     this.previous = this.checked;
+        // });
+
+        $('input[type="checkbox"].is--rad').click(function() {
+            var this_name = $(this).attr('name')
+
+            $('input[name="'+ this_name + '"]').not(this).prop('checked', false)
+        })
+
     })
 })(jQuery);

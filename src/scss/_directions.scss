@@ -216,12 +216,44 @@
         width: 35vw;
         padding: 0 120px;
         margin: auto 0;
+        position: relative;
         &__container {
             img {
                 max-width: 100%;
                 max-height: 100%;
                 width: auto;
                 height: auto;
+                z-index: 999;
+                position: relative;
+            }
+        }
+        &__circles {
+            &__block {
+                border: 1px solid rgba(#000, 0.15);
+                border-radius: 100%;
+                margin: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 100;
+                &.is--on {
+                    width: 47vw;
+                    height: 47vw;
+                    animation: pulse 2.7s infinite;
+                }
+                &.is--tw {
+                    width: 32vw;
+                    height: 32vw;
+                    animation: pulse1 2.7s infinite;
+                }
+                &.is--th {
+                    width: 24vw;
+                    height: 24vw;
+                    border: none;
+                    @include primaryGradient();
+                    animation: pulse2 2.7s infinite;
+                }
             }
         }
     }
@@ -398,6 +430,22 @@
             max-width: 100%;
             min-width: 0;
             width: 100%;
+            &__circles {
+                &__block {
+                    &.is--on {
+                        width: 94vw;
+                        height: 94vw;
+                    }
+                    &.is--tw {
+                        width: 64vw;
+                        height: 64vw;
+                    }
+                    &.is--th {
+                        width: 48vw;
+                        height: 48vw;
+                    }
+                }
+            }
         }
     }
     .directions-line {

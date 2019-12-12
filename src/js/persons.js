@@ -35,6 +35,11 @@
             duration: 0
         });
 
+        $('#bminput').on('select.editable-select', function (e) {
+            var _id = $(this).siblings('.es-list').children('li.selected').data('val');
+            getDotOptions(_id)
+        });
+
         setTimeout(function() {
             var plc = $('#bminput').data('placeholder')
             $('#bminput').attr('placeholder', plc)

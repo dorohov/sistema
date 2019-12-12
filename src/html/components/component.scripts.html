@@ -1,3 +1,14 @@
 <script src="dist/js/jquery-3.3.1.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=c0ad8e19-2fef-43ae-80c9-7a01e5ed4e24&lang=ru_RU" type="text/javascript"></script>
 <script src="dist/js/bundle-min.js"></script>
+<script>
+    $('.headingbar__search').on('submit', function(event) {
+    event.preventDefault();
+    var _this = this;
+    var inText = $(this).find('input[type="text"]');
+    console.log(inText.val().length)
+    if(inText.val().length > 5) {
+        search(event, _this);
+    }
+})
+</script>

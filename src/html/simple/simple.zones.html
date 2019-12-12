@@ -60,5 +60,17 @@
                 </div>
             </div>
         </div>
+        <div class="zones__mobile">
+            @@if(type == 'default') {
+                <div class="zones__mobile__btn">
+                    <a href="/page" class="btn"><span>Подробнее</span></a>
+                </div>
+            }
+            @@if(type == 'card') {
+                <div class="zones__mobile__btn">
+                    <a class="modal-open btn" href="#" onclick="openModal('#modal_form')"><span>Заказать карту</span></a>
+                </div>
+            }
+        </div>
     </div>
 </div>

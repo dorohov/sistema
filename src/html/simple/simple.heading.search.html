@@ -2,7 +2,7 @@
     <form class="headingbar__search">
         <label for="hb_search" class="headingbar__search__title">Поиск</label>
         <div class="headingbar__search__field field-icon">
-            <input type="text" name="hb_search" id="hb_search" placeholder="Введите запрос" required>
+            <input type="text" name="hb_search" id="hb_search" placeholder="Введите запрос" required data-parsley-minlength="5">
             <button type="submit" class="is--icon">
                 @@include('../components/component.svg.html', {"name": "search"})
             </button>
