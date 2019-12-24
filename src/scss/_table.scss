@@ -1,6 +1,7 @@
 $t-green: #99DDCC;
-$t-blue: #BAD7DF;
+$t-blue: #D7E6F3;
 $t-red: #FFE2E2;
+$t-orange: #F9C899;
 
 @mixin rubleLabel() {
     background: #E31D1D;
@@ -68,7 +69,7 @@ $t-red: #FFE2E2;
             width: 100%;
         }
         &__block {
-            height: 135px;
+            height: 150px;
             width: 100%;
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.098);
             margin-bottom: 8px;
@@ -147,6 +148,12 @@ $t-red: #FFE2E2;
             }
             &.is--red {
                 background: $t-red;
+                .table__list__block__inner {
+                    opacity: .5;
+                }
+            }
+            &.is--orange {
+                background: $t-orange;
             }
             &.is--empty {
                 background: #EEEDED;
@@ -194,6 +201,7 @@ $t-red: #FFE2E2;
             margin-bottom: 35px;
             &__block {
                 margin-right: 60px;
+                margin-bottom: 10px;
                 &__inner {
                     display: flex;
                     align-items: center;
@@ -203,7 +211,8 @@ $t-red: #FFE2E2;
                     span {
                         &.is--red,
                         &.is--blue,
-                        &.is--green {
+                        &.is--green,
+                        &,is--orange {
                             display: block;
                             width: 32px;
                             height: 23px;
@@ -217,6 +226,9 @@ $t-red: #FFE2E2;
                         }
                         &.is--green {
                             background: $t-green;
+                        }
+                        &.is--orange {
+                            background: $t-orange;
                         }
                         &.is--ruble {
                             @include rubleLabel();
@@ -238,6 +250,22 @@ $t-red: #FFE2E2;
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1600px) {
+    .table {
+        &__controls {
+            display: block;
+            button {
+                &.is--prev {
+                    left: 40px;
+                }
+                &.is--next {
+                    right: 40px;
+                }
+            }
+        }
     }
 }
 
@@ -308,9 +336,12 @@ $t-red: #FFE2E2;
             padding-left: 30px;
             padding-right: 30px;
         }
+        &__list {
+            padding-top: 80px;
+        }
         &__controls {
             button {
-                top: 180px;
+                top: 240px;
             }
         }
     }

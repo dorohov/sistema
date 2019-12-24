@@ -385,7 +385,7 @@
                     font-size: 7.3vw;
                 }
                 &__text {
-                    font-size: 21.3vw;
+                    font-size: 16.3vw;
                 }
             }
             &__left {
@@ -405,6 +405,10 @@
                 padding-left: 10vw;
                 &.is--man {
                     padding-right: 0;
+                }
+                img {
+                    max-height: 100%;
+                    max-width: 320px;
                 }
             }
         }
@@ -446,6 +450,19 @@
         &__carousel {
             &__item {
                 padding-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-height: 1600px) {
+    .banner {
+        &__carousel {
+            &__item {
+                img {
+                    max-height: 90vh;
+                    width: auto;
+                }
             }
         }
     }

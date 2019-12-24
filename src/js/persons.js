@@ -45,5 +45,13 @@
             $('#bminput').attr('placeholder', plc)
         }, 1000)
 
+        $('.person-dot').on('click', function() {
+            $('.body-map__right__inner').sticky({
+                topSpacing: 100,
+                responsiveWidth: true,
+                bottomSpacing: $('.footer').innerHeight() + 100
+            });
+        })
+
     })
 })(jQuery);
